@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titlePage__header {
+    height: 10vh;
+    background-color: #000;
+    &__iconLogo {
+        display: inline-block;
+        &__img {
+            width: 25vw;
+            display: block;
+        }
+    }
+    &__menu {
+        position: fixed;
+        top: 0;
+        width: 75vw;
+        height: 10vh;
+        display: inline-block;
+        &__wrapper {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+    }
+}
+
+.titlePage__mainContent {
+    background-image: url('../../assets/img/title_slide.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(100% - 30%);
+    width: 100vw;
+    height: 90vh;
+}
