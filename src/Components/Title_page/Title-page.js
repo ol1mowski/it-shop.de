@@ -8,7 +8,7 @@ const TitlePage = () => {
     const hamburgerBtn = useRef(null);
     const menu = useRef(null);
 
-    const [click, setClick] = useState(false);
+    const [click, setClick] = useState(true);
 
     useEffect(() => {
 
@@ -26,7 +26,7 @@ const TitlePage = () => {
             hamburgerBtn.current.removeEventListener('click', clickHamburgerHandler);
         });
 
-    });
+    }, [click, menu]);
 
     return (
         <>
