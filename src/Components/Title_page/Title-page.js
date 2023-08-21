@@ -1,66 +1,43 @@
+import { useEffect, useState } from 'react';
 import style from './Title-page.module.scss';
-import logo from '../../assets/icons/company_logo.jpg';
-import hamburger from '../../assets/icons/hamburger_menu.svg';
-import { useEffect, useRef, useState } from 'react';
+import Header from './header/Header';
 
 const TitlePage = () => {
 
-    const hamburgerBtn = useRef(null);
-    const menu = useRef(null);
+    const header = 'Welcome to the best IT course site';
 
-    const [click, setClick] = useState(true);
+    const [string, setString] = useState('');
 
     useEffect(() => {
-
-        const clickHamburgerHandler = () => {
-            click ? setClick(false) : setClick(true);
-            click ? menu.current.style.display = 'block' : menu.current.style.display = 'none';
-            menu.current.addEventListener('animationend', () => {
-                click ? menu.current.style.transform = 'translateY(0)' : menu.current.style.transform = 'translateY(-100vh)';          
-            });
-        }
-
-        hamburgerBtn.current.addEventListener('click', clickHamburgerHandler);
-
-        return (() => {
-            hamburgerBtn.current.removeEventListener('click', clickHamburgerHandler);
-        });
-
-    }, [click, menu]);
+        let currentIndex = 0;
+        const interval = setInterval(() => {
+            if (currentIndex < header.length - 1) {
+                setString(prevString => prevString + header[currentIndex]);
+                currentIndex++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 100);
+    
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
+    
 
     return (
         <>
-            <header className={style.titlePage__header}>
-                <div className={style.titlePage__header__iconLogo}>
-                    <img className={style.titlePage__header__iconLogo__img} src={logo} alt='Companies logo' />
-                </div>
-                <section className={style.titlePage__header__menu}>
-                    <div className={style.titlePage__header__menu__hamburger}>
-                        <img ref={hamburgerBtn} src={hamburger} alt='hamburger-menu' className={style.titlePage__header__menu__hamburger__img} />
-                    </div>
-                    <div ref={menu} className={style.titlePage__header__menu__wrapper}>
-                        <div className={style.titlePage__header__menu__container}>
-                            <div className={style.titlePage__header__menu__items}>
-                                About
-                            </div>
-                            <div className={style.titlePage__header__menu__items}>
-                                What you gain
-                            </div>
-                            <div className={style.titlePage__header__menu__items}>
-                                Offerts
-                            </div>
-                            <div className={style.titlePage__header__menu__items}>
-                                Contact
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </header>
+            <Header />
             <main className={style.titlePage__mainContent}>
-
+                <h1 className={style.titlePage__mainContent__h1}>
+                    {string}
+                </h1>
+                <button className={style.titlePage__mainContent__button}>
+                    Let's start Learn !
+                </button>
             </main>
         </>
-    )
+    );
 };
 
 export default TitlePage;
