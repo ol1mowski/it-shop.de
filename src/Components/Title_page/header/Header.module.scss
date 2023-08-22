@@ -1,6 +1,9 @@
 .titlePage__header {
     height: 10vh;
     background-color: #000;
+    width: 100vw;
+    position: fixed;
+    top: 0;
     &__iconLogo {
         display: inline-block;
         &__img {

@@ -12,12 +12,13 @@
     background-size: cover;
     background-position: calc(100% - 30%);
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    gap: 35%;
+    gap: 80%;
+    padding-top: 45vh;
     padding-bottom: calc(100% - 10%);
     padding-left: 2rem;
     &__h1 {

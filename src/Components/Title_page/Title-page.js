@@ -3,27 +3,28 @@ import style from './Title-page.module.scss';
 import Header from './header/Header';
 
 const TitlePage = () => {
-
     const header = 'Welcome to the best IT course site';
-
+    const tab = [...header];
+    
     const [string, setString] = useState('');
-
+    const [currentIndex, setCurrentIndex] = useState(0);
+    
     useEffect(() => {
-        let currentIndex = 0;
-        const interval = setInterval(() => {
-            if (currentIndex < header.length - 1) {
-                setString(prevString => prevString + header[currentIndex]);
-                currentIndex++;
+        const typing = setInterval(() => {
+            if (currentIndex < tab.length) {
+                setString(prevString => prevString + tab[currentIndex]);
+                setCurrentIndex(prevIndex => prevIndex + 1);
             } else {
-                clearInterval(interval);
+                clearInterval(typing);
             }
         }, 100);
     
         return () => {
-            clearInterval(interval);
+            clearInterval(typing);
         };
-    }, []);
-    
+    }, [currentIndex]);
+
+
 
     return (
         <>
