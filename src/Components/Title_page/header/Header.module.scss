@@ -4,10 +4,19 @@
     width: 100vw;
     position: fixed;
     top: 0;
+    @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
+        height: 15vh;
+    }
     &__iconLogo {
         display: inline-block;
+        width: 5rem;
+        height: 10vh;
+        @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
+        height: 15vh;
+    }
         &__img {
-            width: 24.7vw;
+            width: 100%;
+            height: 100%;
             display: block;
         }
     }
@@ -54,9 +63,15 @@
             align-items: center;
             flex-direction: column;
             gap: 5%;
+            @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
+                height: 15vh;
+            }
+            @media (orientation: landscape)and (min-height: 500px) and (max-width: 1000px) {
+                height: 10vh;
+            }
             &__img {
                 display: block;
-                width: 10vw; 
+                width: 3rem; 
             }
             &__item {
                 background-color: #fff;

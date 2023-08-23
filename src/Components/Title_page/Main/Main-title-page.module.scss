@@ -1,0 +1,127 @@
+* {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.titlePage__mainContent {
+    background-image: url('../../../assets/img/title_slide.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(100% - 30%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 8rem;
+    padding-top: 45vh;
+    padding-bottom: calc(100% - 10%);
+    padding-left: 2rem;
+    @media screen and (min-width: 500px) {
+        padding-left: 3rem;
+        padding-bottom: calc(100% - 30%);
+    }
+    @media screen and (min-width: 700px) {
+        padding-left: 6rem;
+        padding-bottom: calc(100% - 50%);
+    }
+    @media screen and (min-width: 900px) {
+        padding-left: 9rem;
+        padding-bottom: calc(100% - 60%);
+    }
+    @media screen and (min-width: 1200px) {
+        padding-left: 12rem;
+        padding-bottom: calc(100% - 70%);
+    }
+    @media screen and (min-width: 1400px) {
+        padding-left: 15rem;
+    }
+    @media screen and (min-width: 1700px) {
+        padding-top: 30vh;
+        padding-left: 20rem;
+        padding-bottom: calc(100% - 80%);
+    }
+    @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
+        padding-top: 40vh;
+        gap: 2rem;
+        padding-bottom: calc(100% - 75%);
+    }
+    @media (orientation: landscape)and (min-height: 500px) and (max-width: 920px) {
+        gap: 5rem;
+    }
+
+    &__h1 {
+        font-size: 2rem;
+        width: 15rem;
+        padding-top: calc(100% - 85%);
+        color: #fff;
+        @media screen and (min-width: 350px) {
+            font-size: 2.3rem;
+        }
+        @media screen and (min-width: 550px) {
+            font-size: 2.8rem;
+            width: 20rem;
+        }
+        @media screen and (min-width: 1000px) {
+            font-size: 3rem;
+            width: 20rem;
+        }
+        @media screen and (min-width: 1600px) {
+            font-size: 5.6rem;
+            width: 40rem;
+        }
+    }
+
+    &__button {
+        display: block;
+        padding: 1rem;
+        line-height: 3vh;
+        border: none;
+        border-radius: .7rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: #0a0d88a8;
+        animation: buttonAnimated 2s;
+        transition: padding .7s;
+        @media screen and (min-width: 1000px) {
+            padding: 1.2rem;
+        }
+        @media screen and (min-width: 1600px) {
+            padding: 1.6rem;
+        }
+        @media (orientation: landscape)and (min-width: 320px) and (max-width: 920px) {
+            padding: 1.2rem;
+        }
+    }
+
+    &__button:hover {
+        cursor: pointer;
+        padding: 1.2rem;
+        -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        @media screen and (min-width: 1000px) {
+            padding: 1.4rem;
+        }
+        @media screen and (min-width: 1600px) {
+            padding: 1.8rem;
+        }
+    }
+}
+
+@keyframes buttonAnimated {
+    0% {
+        transform: translate(-5vw);
+    }
+
+    50% {
+        transform: translate(10vw);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
