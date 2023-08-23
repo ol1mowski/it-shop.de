@@ -15,7 +15,15 @@ const Header = () => {
 
         const clickHamburgerHandler = () => {
             click ? setClick(false) : setClick(true);
-            click ? menu.current.style.display = 'block' : menu.current.style.display = 'none';
+            if (click) {
+                menu.current.style.display = 'flex'; 
+                menu.current.style.justifyContent = 'center'; 
+                menu.current.style.alignItems = 'center'; 
+            }
+            
+            else {
+                menu.current.style.display = 'none';
+            } 
             menu.current.addEventListener('animationend', () => {
                 click ? menu.current.style.transform = 'translateY(0)' : menu.current.style.transform = 'translateY(-100vh)';
             });

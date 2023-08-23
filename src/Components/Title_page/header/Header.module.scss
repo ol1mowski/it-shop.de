@@ -28,7 +28,8 @@
         display: inline-block;
         &__wrapper {
             height: 90vh;
-            width: 800vw;
+            width: 120vw;
+            padding: 10vh 5vw 0 0vw;
             position: absolute;
             top: 10vh;
             left: -30vw;
@@ -37,6 +38,23 @@
             display: none;
             transform: translateY(-100vh);
             animation: slideDown 0.7s;
+            @media screen and (min-width: 400px) {
+                padding: 10vh 5vw 0 10vw;
+            }
+            @media screen and (min-width: 600px) {
+                padding: 10vh 5vw 0 20vw;
+            }
+            @media screen and (min-width: 700px) {
+                display: block;
+                top: 110vh;
+                left: 0;
+                top: 100vh;
+                background-color: #000;
+                color: #fff;
+                height: 10vh;
+                width: 90vw;
+                animation: none;
+            }
         }
         &__container {
             width: 100vw;
@@ -47,11 +65,48 @@
             align-items: center;
             flex-direction: column;
             gap: 5%;
+            @media screen and (min-width: 700px) {
+                flex-direction: row;
+                width: 100%;
+                position: relative;
+                bottom: 3rem;
+                gap: 3rem;
+            }
+            @media screen and (min-width: 1024px) {
+                bottom: 3.5rem;   
+                left: 3rem;
+            }
+            @media screen and (min-width: 1100px) { 
+                left: 11rem;
+            }
+            @media screen and (min-width: 1250px) {   
+                left: 18rem;
+                bottom: 4rem;
+            }
+            @media screen and (min-width: 1450px) {   
+                left: 25rem;
+            }
+            @media screen and (min-width: 1450px) {   
+                left: 35rem;
+                bottom: 5rem;
+            }
+            @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
+                bottom: 1.5rem;
+            }
         }
         &__items {
             display: block;
             font-weight: bold;
             font-size: 2rem;
+            @media screen and (min-width: 700px) {
+                font-size: 1rem;
+            }
+            @media screen and (min-width: 1024px) {
+                font-size: 1.2rem;
+            }
+            @media screen and (min-width: 1450px) {
+                font-size: 1.5rem;
+            }
         }
         &__hamburger {
             width: 10vw;
@@ -68,6 +123,9 @@
             }
             @media (orientation: landscape)and (min-height: 500px) and (max-width: 1000px) {
                 height: 10vh;
+            }
+            @media screen and (min-width: 700px) {
+                display: none;
             }
             &__img {
                 display: block;
