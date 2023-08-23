@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/it-shop.de/static/css/main.01a08168.css",
+    "main.js": "/it-shop.de/static/js/main.b28aee5a.js",
+    "static/js/787.037d72d9.chunk.js": "/it-shop.de/static/js/787.037d72d9.chunk.js",
+    "static/media/title_slide.png": "/it-shop.de/static/media/title_slide.0be08ad9cbf37f0625df.png",
+    "static/media/company_logo.jpg": "/it-shop.de/static/media/company_logo.166d8ab7c5437b13bd34.jpg",
+    "static/media/hamburger_menu.svg": "/it-shop.de/static/media/hamburger_menu.43fcbdbe07a7a5ba57431777d9572fcc.svg",
+    "index.html": "/it-shop.de/index.html",
+    "main.01a08168.css.map": "/it-shop.de/static/css/main.01a08168.css.map",
+    "main.b28aee5a.js.map": "/it-shop.de/static/js/main.b28aee5a.js.map",
+    "787.037d72d9.chunk.js.map": "/it-shop.de/static/js/787.037d72d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01a08168.css",
+    "static/js/main.b28aee5a.js"
+  ]
+}
