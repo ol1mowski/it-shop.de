@@ -2,28 +2,51 @@ import style from './Header.module.scss';
 import logo from '../../../assets/icons/company_logo.jpg';
 import hamburger from '../../../assets/icons/hamburger_menu.svg';
 import { useEffect, useRef, useState } from 'react';
-
+import bag from '../../../assets/icons/bag.svg';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
 
     const hamburgerBtn = useRef(null);
     const menu = useRef(null);
+    const schopBag = useRef(null);
+    const bagInfo = useRef(null);
+
+    const counter = useSelector(state => state.counter.counter);
+    const totalPrice = useSelector(state => state.counter.totalPrice);
+
 
     const [click, setClick] = useState(true);
+    const [show, setShow] = useState(true);
+
+    useEffect(() => {
+
+        const bagClickHandler = () => {
+            setShow(prev => !prev);
+            show ? bagInfo.current.style.display = 'flex' : bagInfo.current.style.display = 'none';
+        }
+
+        schopBag.current.addEventListener('click', bagClickHandler);
+
+        return(() => {
+            schopBag.current.removeEventListener('click', bagClickHandler);
+        })
+
+    }, [schopBag, show])
 
     useEffect(() => {
 
         const clickHamburgerHandler = () => {
             click ? setClick(false) : setClick(true);
             if (click) {
-                menu.current.style.display = 'flex'; 
-                menu.current.style.justifyContent = 'center'; 
-                menu.current.style.alignItems = 'center'; 
+                menu.current.style.display = 'flex';
+                menu.current.style.justifyContent = 'center';
+                menu.current.style.alignItems = 'center';
             }
-            
+
             else {
                 menu.current.style.display = 'none';
-            } 
+            }
             menu.current.addEventListener('animationend', () => {
                 click ? menu.current.style.transform = 'translateY(0)' : menu.current.style.transform = 'translateY(-100vh)';
             });
@@ -58,11 +81,25 @@ const Header = () => {
                             <div className={style.titlePage__header__menu__items}>
                                 Offerts
                             </div>
-                            <div className={style.titlePage__header__menu__items}>
-                                Contact
-                            </div>
+                            <aside ref={schopBag} className={style.titlePage__header__shopBag}>
+                                <img src={bag} alt='shoping bag img' />
+                                <div className={style.titlePage__header__shopBag__count}>
+                                    {counter}
+                                </div>
+                            </aside>
                         </div>
                     </div>
+                </section>
+                <section ref={bagInfo} className={style.titlePage__header__shopBagContent}>
+                        <div className={style.titlePage__header__shopBagContent__info}>
+                            { counter ? "Your items:" : (<p>You haven't any items yet! <br />Let's add one now!</p>)  }
+                        </div>
+                        <div className={style.titlePage__header__shopBagContent__total}>
+                            <h2>
+                                Total: ${ totalPrice }
+                            </h2>
+                        </div>
+
                 </section>
             </header>
         </>

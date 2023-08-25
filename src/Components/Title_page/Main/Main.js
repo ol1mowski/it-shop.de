@@ -4,7 +4,7 @@ import style from './Main-title-page.module.scss';
 
 const Main = () => {
 
-    const header = 'Welcome to the best IT course site';
+    const header = '<Welcome to the best IT course site/>';
     const tab = [...header];
     
     const [string, setString] = useState('');

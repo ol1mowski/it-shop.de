@@ -4,28 +4,92 @@
     width: 100vw;
     position: fixed;
     top: 0;
+
     @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
         height: 15vh;
     }
+
+    &__shopBag {
+        display: none;
+        z-index: 1;
+        position: relative;
+        cursor: pointer;
+
+        img {
+            display: block;
+            width: 3vw;
+            height: 3vh;
+        }
+
+        @media screen and (min-width: 700px) {
+            display: inline-block;
+        }
+
+        &__count {
+            border-radius: 100%;
+            width: 2vw;
+            height: 2vh;
+            background-color: #808080;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 2vh;
+            left: 1.5vw;
+            padding: .7rem;
+            @media screen and (min-width: 1400px) {
+                width: 1vw;
+            }
+        }
+    }
+    &__shopBagContent {
+        display: none;
+        width: 20vw;
+        height: 40vh;
+        position: fixed;
+        right: 1vw;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        &__info {
+            font-weight: bold;
+            font-size: 1.2rem;
+            width: 50%;
+            height: 50%;
+        }
+    }
+
     &__iconLogo {
         display: inline-block;
+        cursor: pointer;
+        margin-left: 5vw;
         width: 5rem;
         height: 10vh;
+
+        @media screen and (min-width: 1400px) {
+            width: 6rem;
+        }
+
         @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
-        height: 15vh;
-    }
+            height: 15vh;
+
+        }
+
         &__img {
             width: 100%;
             height: 100%;
             display: block;
         }
     }
+
     &__menu {
         position: fixed;
         top: 0;
-        width: 75vw;
+        width: 80vw;
         height: 10vh;
         display: inline-block;
+
         &__wrapper {
             height: 90vh;
             width: 120vw;
@@ -38,12 +102,15 @@
             display: none;
             transform: translateY(-100vh);
             animation: slideDown 0.7s;
+
             @media screen and (min-width: 400px) {
                 padding: 10vh 5vw 0 10vw;
             }
+
             @media screen and (min-width: 600px) {
                 padding: 10vh 5vw 0 20vw;
             }
+
             @media screen and (min-width: 700px) {
                 display: block;
                 top: 110vh;
@@ -56,6 +123,7 @@
                 animation: none;
             }
         }
+
         &__container {
             width: 100vw;
             height: 100%;
@@ -65,6 +133,7 @@
             align-items: center;
             flex-direction: column;
             gap: 5%;
+
             @media screen and (min-width: 700px) {
                 flex-direction: row;
                 width: 100%;
@@ -72,42 +141,62 @@
                 bottom: 3rem;
                 gap: 3rem;
             }
+
             @media screen and (min-width: 1024px) {
-                bottom: 3.5rem;   
+                bottom: 3.5rem;
                 left: 3rem;
             }
-            @media screen and (min-width: 1100px) { 
+
+            @media screen and (min-width: 1100px) {
                 left: 11rem;
             }
-            @media screen and (min-width: 1250px) {   
+
+            @media screen and (min-width: 1250px) {
                 left: 18rem;
                 bottom: 4rem;
             }
-            @media screen and (min-width: 1450px) {   
+
+            @media screen and (min-width: 1450px) {
                 left: 25rem;
             }
-            @media screen and (min-width: 1450px) {   
+
+            @media screen and (min-width: 1450px) {
                 left: 35rem;
                 bottom: 5rem;
             }
+
             @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
                 bottom: 1.5rem;
             }
         }
+
         &__items {
             display: block;
             font-weight: bold;
             font-size: 2rem;
+            transition: all 0.7s;
+            cursor: pointer;
+
             @media screen and (min-width: 700px) {
                 font-size: 1rem;
             }
+
             @media screen and (min-width: 1024px) {
                 font-size: 1.2rem;
             }
+
             @media screen and (min-width: 1450px) {
                 font-size: 1.5rem;
             }
         }
+
+        &__items:hover {
+            background-color: #fff;
+            padding: .5rem;
+            border-radius: 5px;
+            color: #000;
+        }
+
         &__hamburger {
             width: 10vw;
             height: 10vh;
@@ -118,19 +207,24 @@
             align-items: center;
             flex-direction: column;
             gap: 5%;
+
             @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
                 height: 15vh;
             }
+
             @media (orientation: landscape)and (min-height: 500px) and (max-width: 1000px) {
                 height: 10vh;
             }
+
             @media screen and (min-width: 700px) {
                 display: none;
             }
+
             &__img {
                 display: block;
-                width: 3rem; 
+                width: 3rem;
             }
+
             &__item {
                 background-color: #fff;
                 width: 10vw;
