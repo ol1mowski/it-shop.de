@@ -4,6 +4,7 @@ import hamburger from '../../../assets/icons/hamburger_menu.svg';
 import { useEffect, useRef, useState } from 'react';
 import bag from '../../../assets/icons/bag.svg';
 import { useSelector } from 'react-redux';
+import ZeroCondition from './ShopBag/ZeroCondition/ZeroCondition';
 
 const Header = () => {
 
@@ -23,7 +24,7 @@ const Header = () => {
 
         const bagClickHandler = () => {
             setShow(prev => !prev);
-            show ? bagInfo.current.style.display = 'flex' : bagInfo.current.style.display = 'none';
+            show ? bagInfo.current.style.display = 'block' : bagInfo.current.style.display = 'none';
         }
 
         schopBag.current.addEventListener('click', bagClickHandler);
@@ -90,14 +91,19 @@ const Header = () => {
                         </div>
                     </div>
                 </section>
+
+
                 <section ref={bagInfo} className={style.titlePage__header__shopBagContent}>
                         <div className={style.titlePage__header__shopBagContent__info}>
-                            { counter ? "Your items:" : (<p>You haven't any items yet! <br />Let's add one now!</p>)  }
+                            { !counter ? <ZeroCondition /> : null}
                         </div>
                         <div className={style.titlePage__header__shopBagContent__total}>
                             <h2>
                                 Total: ${ totalPrice }
                             </h2>
+                            <button className={style.titlePage__header__shopBagContent__total__button}>
+                                Pay now
+                            </button>
                         </div>
 
                 </section>
