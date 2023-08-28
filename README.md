@@ -1,7 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-![Uploading it-shop.png…]()
+![it-shop](https://github.com/ol1mowski/it-shop.de/assets/101707516/b2cead5d-63e2-4eac-a64e-6629fea0bec3)
+
 
 ## Available Scripts
 
