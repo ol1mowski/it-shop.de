@@ -93,7 +93,7 @@ const Header = () => {
                                     <h2>
                                         Total: ${totalPrice}
                                     </h2>
-                                    <button className={style.titlePage__header__shopBagContent__total__button}>
+                                    <button className={style.titlePage__header__menu__items__bagContent__button}>
                                         Pay now
                                     </button>
                                 </div>
