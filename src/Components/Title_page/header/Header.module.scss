@@ -131,7 +131,7 @@
             padding: 10vh 5vw 0 0vw;
             position: absolute;
             top: 10vh;
-            left: -30vw;
+            left: -40vw;
             color: #000;
             background-color: #fff;
             display: none;
@@ -140,6 +140,7 @@
 
             @media screen and (min-width: 400px) {
                 padding: 10vh 5vw 0 10vw;
+                left: -35vw;
             }
 
             @media screen and (min-width: 600px) {
@@ -222,6 +223,37 @@
 
             @media screen and (min-width: 1450px) {
                 font-size: 1.5rem;
+            }
+            &__bag {
+                display: block;
+                font-weight: bold;
+                font-size: 2rem;
+                transition: all 0.7s;
+                cursor: pointer;
+    
+                @media screen and (min-width: 700px) {
+                    display: none;
+                }
+            }
+            &__bagContent {
+                width: 100%;
+                height: 100%;
+                &__top {
+                    height: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                &__price {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+                    padding: 10% 1rem 0 1rem;
+                    margin-top: 2rem;
+                    border-top: 2px dashed #000;
+                }
             }
         }
 

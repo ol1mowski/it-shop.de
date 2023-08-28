@@ -29,7 +29,7 @@ const Header = () => {
 
         schopBag.current.addEventListener('click', bagClickHandler);
 
-        return(() => {
+        return (() => {
             schopBag.current.removeEventListener('click', bagClickHandler);
         })
 
@@ -82,6 +82,22 @@ const Header = () => {
                             <div className={style.titlePage__header__menu__items}>
                                 Offerts
                             </div>
+                            <div className={style.titlePage__header__menu__items__bag}>
+                                Shoping Bag
+                            </div>
+                            <div className={style.titlePage__header__menu__items__bagContent}>
+                                {/* <div className={style.titlePage__header__menu__items__bagContent__top}>
+                                    <ZeroCondition />
+                                </div> */}
+                                <div className={style.titlePage__header__menu__items__bagContent__price}>
+                                    <h2>
+                                        Total: ${totalPrice}
+                                    </h2>
+                                    <button className={style.titlePage__header__shopBagContent__total__button}>
+                                        Pay now
+                                    </button>
+                                </div>
+                            </div>
                             <aside ref={schopBag} className={style.titlePage__header__shopBag}>
                                 <img src={bag} alt='shoping bag img' />
                                 <div className={style.titlePage__header__shopBag__count}>
@@ -94,17 +110,17 @@ const Header = () => {
 
 
                 <section ref={bagInfo} className={style.titlePage__header__shopBagContent}>
-                        <div className={style.titlePage__header__shopBagContent__info}>
-                            { !counter ? <ZeroCondition /> : null}
-                        </div>
-                        <div className={style.titlePage__header__shopBagContent__total}>
-                            <h2>
-                                Total: ${ totalPrice }
-                            </h2>
-                            <button className={style.titlePage__header__shopBagContent__total__button}>
-                                Pay now
-                            </button>
-                        </div>
+                    <div className={style.titlePage__header__shopBagContent__info}>
+                        {!counter ? <ZeroCondition /> : null}
+                    </div>
+                    <div className={style.titlePage__header__shopBagContent__total}>
+                        <h2>
+                            Total: ${totalPrice}
+                        </h2>
+                        <button className={style.titlePage__header__shopBagContent__total__button}>
+                            Pay now
+                        </button>
+                    </div>
 
                 </section>
             </header>

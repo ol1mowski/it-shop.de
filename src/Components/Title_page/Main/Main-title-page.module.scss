@@ -8,6 +8,7 @@
     background-image: url('../../../assets/img/title_slide.png');
     background-repeat: no-repeat;
     background-size: cover;
+    animation: backgroundAnimate 2s;
     background-position: calc(100% - 30%);
     width: 100vw;
     height: 100vh;
@@ -122,5 +123,15 @@
 
     100% {
         transform: translate(0);
+    }
+}
+
+@keyframes backgroundAnimate {
+    0% {
+        background-position: calc(100% - 50%);
+        scale: 1.5;
+    }
+    100% {
+        background-position: calc(100% - 30%);
     }
 }
