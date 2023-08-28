@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/it-shop.de/static/css/main.cebc63e0.css",
+    "main.css": "/it-shop.de/static/css/main.1cdb965d.css",
     "main.js": "/it-shop.de/static/js/main.4843b8d0.js",
     "static/js/787.037d72d9.chunk.js": "/it-shop.de/static/js/787.037d72d9.chunk.js",
     "static/media/title_slide.png": "/it-shop.de/static/media/title_slide.0be08ad9cbf37f0625df.png",
@@ -8,12 +8,12 @@
     "static/media/bag.svg": "/it-shop.de/static/media/bag.947408fcb6cb7f4b3911499d2750a3ba.svg",
     "static/media/hamburger_menu.svg": "/it-shop.de/static/media/hamburger_menu.43fcbdbe07a7a5ba57431777d9572fcc.svg",
     "index.html": "/it-shop.de/index.html",
-    "main.cebc63e0.css.map": "/it-shop.de/static/css/main.cebc63e0.css.map",
+    "main.1cdb965d.css.map": "/it-shop.de/static/css/main.1cdb965d.css.map",
     "main.4843b8d0.js.map": "/it-shop.de/static/js/main.4843b8d0.js.map",
     "787.037d72d9.chunk.js.map": "/it-shop.de/static/js/787.037d72d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cebc63e0.css",
+    "static/css/main.1cdb965d.css",
     "static/js/main.4843b8d0.js"
   ]
 }
