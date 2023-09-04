@@ -2,6 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ![it-shop](https://github.com/ol1mowski/it-shop.de/assets/101707516/b2cead5d-63e2-4eac-a64e-6629fea0bec3)
+![web](https://github.com/ol1mowski/it-shop.de/assets/101707516/185d9983-8335-4247-95f6-c0fdefec2169)
 
 
 ## Available Scripts
