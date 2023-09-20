@@ -1,0 +1,21 @@
+.container {
+    background-color: #000;
+    color: #fff;
+    height: 70vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 15%;
+    padding-top: 15%;
+    &__headerSection {
+        font-size: 1.5rem;
+    }
+    &__infoSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        padding: 0 1rem;
+    }
+}
