@@ -1,3 +1,5 @@
+@import '../../../sass/setting.module.scss';
+
 .titlePage__header {
     height: 10vh;
     background-color: #000;
@@ -50,7 +52,7 @@
         height: 55vh;
         position: fixed;
         right: 1vw;
-        background-color: #fff;
+        background-color: $text-color;
         border-radius: 15px;
         gap: 20%;
 
@@ -96,7 +98,7 @@
                 border: none;
                 border-radius: 7px;
                 background-color: #0275d8;
-                color: #fff;
+                color: $text-color;
                 cursor: pointer;
                 padding: .7rem 1.5rem;
             }
@@ -140,7 +142,7 @@
             top: 10vh;
             left: -40vw;
             color: #000;
-            background-color: #fff;
+            background-color: $text-color;
             display: none;
             transform: translateY(-100vh);
             animation: slideDown 0.7s;
@@ -160,7 +162,7 @@
                 left: 0;
                 top: 100vh;
                 background-color: #000;
-                color: #fff;
+                color: $text-color;
                 height: 10vh;
                 width: 90vw;
                 animation: none;
@@ -271,7 +273,7 @@
                     border: none;
                     border-radius: 7px;
                     background-color: #0275d8;
-                    color: #fff;
+                    color: $text-color;
                     cursor: pointer;
                     padding: .7rem 1.5rem;
                     font-size: 1rem;
@@ -280,7 +282,7 @@
         }
 
         &__items:hover {
-            background-color: #fff;
+            background-color: $text-color;
             padding: .5rem;
             border-radius: 5px;
             color: #000;
@@ -315,7 +317,7 @@
             }
 
             &__item {
-                background-color: #fff;
+                background-color: $text-color;
                 width: 10vw;
                 height: .3vh;
             }

@@ -3,6 +3,7 @@
     font-family: 'Source Code Pro', monospace;
 }
 
+@import '../../../sass/setting.module.scss';
 
 .titlePage__mainContent {
     background-image: url('../../../assets/img/title_slide.png');
@@ -57,7 +58,7 @@
         font-size: 2rem;
         width: 15rem;
         padding-top: calc(100% - 85%);
-        color: #fff;
+        color: $text-color;
         @media screen and (min-width: 350px) {
             font-size: 2.3rem;
             width: 20rem;
@@ -81,34 +82,11 @@
     }
 
     &__button {
-        display: block;
-        padding: 1rem;
-        line-height: 3vh;
-        border: none;
-        border-radius: .7rem;
-        font-size: 1rem;
-        font-weight: bold;
-        color: #fff;
-        background-color: #0a0d88a8;
-        animation: buttonAnimated 2s;
-        transition: padding .7s;
-        @media screen and (min-width: 1000px) {
-            padding: 1.2rem;
-        }
-        @media (orientation: landscape)and (min-width: 320px) and (max-width: 920px) {
-            padding: 1.2rem;
-        }
+        @include button;
     }
 
     &__button:hover {
-        cursor: pointer;
-        padding: 1.2rem;
-        -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-        -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-        @media screen and (min-width: 1000px) {
-            padding: 1.4rem;
-        }
+        @include buttonHover;
     }
 }
 

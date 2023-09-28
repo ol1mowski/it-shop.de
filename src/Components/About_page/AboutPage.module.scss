@@ -1,6 +1,8 @@
+@import '../../sass/setting.module.scss';
+
 .container {
     background-color: #000;
-    color: #fff;
+    color: $text-color;
     height: 70vh;
     display: flex;
     justify-content: start;
@@ -9,7 +11,7 @@
     gap: 15%;
     padding-top: 15%;
     &__headerSection {
-        font-size: 1.5rem;
+        font-size: $headers-size;
     }
     &__infoSection {
         display: flex;
