@@ -4,6 +4,19 @@
     align-items: center;
     gap: 10%;
     padding: 0 1rem;
+    @media screen and (min-width: 600px) {
+        padding: 0 5rem;
+    } 
+    @media screen and (min-width: 800px) {
+        padding: 0 10rem;
+    }
+    @media screen and (min-width: 1024px) {
+        padding: 0 2rem;
+    }
+    @media screen and (min-width: 1300px) {
+        padding: 0 5rem;
+    }
+
     &__img {
         width: 20%;
     }

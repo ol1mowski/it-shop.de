@@ -9,6 +9,9 @@
     @media screen and (min-width: 500px) {
         height: 100vh;
     }
+    @media screen and (min-width: 1024px) {
+        display: flex;
+    }
 }
 
 .containerSections {
@@ -20,29 +23,38 @@
     align-items: center;
     flex-direction: column;
     gap: 10%;
+    @media screen and (min-width: 1024px) {
+        height: 100vh;
+        justify-content: start;
+        padding-top: 5%;
+    }
+    @media screen and (min-width: 1300px) {
+        gap: 5%;
+    }
 
     &__headerSection {
         font-size: $headers-size;
-    }
-
-    &__infoSection {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10%;
-        padding: 0 1rem;
-        @media screen and (min-width: 600px) {
-            padding: 0 5rem;
-        }
     }
 }
 
 .containerImg {
     background-color: #000;
-    height: 3 0vh;
     padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
 
     &__img {
         width: 100%;
+        @media screen and (min-width: 600px) {
+            width: 70%;
+        }
+        @media screen and (min-width: 800px) {
+            width: 60%;
+        }
+        @media screen and (min-width: 1024px) {
+            padding-top: 15%;
+            width: 50vw;
+            height: 70%;
+        }
     }
 }
