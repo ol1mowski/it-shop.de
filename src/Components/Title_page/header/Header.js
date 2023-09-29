@@ -73,9 +73,9 @@ const Header = () => {
                     </div>
                     <div ref={menu} className={style.titlePage__header__menu__wrapper}>
                         <div className={style.titlePage__header__menu__container}>
-                            <div className={style.titlePage__header__menu__items}>
+                            <a href='#id'><div className={style.titlePage__header__menu__items}>
                                 About
-                            </div>
+                            </div></a>
                             <div className={style.titlePage__header__menu__items}>
                                 What you gain
                             </div>

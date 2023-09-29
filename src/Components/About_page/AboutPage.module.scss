@@ -1,23 +1,48 @@
 @import '../../sass/setting.module.scss';
 
+#id {
+    color: $text-color;
+}
+
 .container {
+    height: 70vh;
+    @media screen and (min-width: 500px) {
+        height: 100vh;
+    }
+}
+
+.containerSections {
     background-color: #000;
     color: $text-color;
     height: 70vh;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 15%;
-    padding-top: 15%;
+    gap: 10%;
+
     &__headerSection {
         font-size: $headers-size;
     }
+
     &__infoSection {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10%;
         padding: 0 1rem;
+        @media screen and (min-width: 600px) {
+            padding: 0 5rem;
+        }
+    }
+}
+
+.containerImg {
+    background-color: #000;
+    height: 3 0vh;
+    padding-bottom: 10%;
+
+    &__img {
+        width: 100%;
     }
 }

@@ -1,0 +1,14 @@
+.infoSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 0 1rem;
+    &__img {
+        width: 20%;
+    }
+}
+
+#big {
+    width: 15%;
+}
