@@ -21,6 +21,9 @@
             display: block;
             width: 3vw;
             height: 3vh;
+            @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
+                height: 7vh;
+            }
         }
 
         @media screen and (min-width: 700px) {
@@ -315,6 +318,9 @@
             &__img {
                 display: block;
                 width: 3rem;
+                @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
+                    width: 15vw;
+                }
             }
 
             &__item {

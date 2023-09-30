@@ -12,6 +12,9 @@
     @media screen and (min-width: 1024px) {
         display: flex;
     }
+    @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
+        height: 100vh;
+    }
 }
 
 .containerSections {
@@ -32,6 +35,12 @@
         gap: 5%;
     }
 
+    @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
+        padding-top: 20%;
+        gap: 20%;
+        height: 90%;
+    }
+
     &__headerSection {
         font-size: $headers-size;
     }
@@ -42,6 +51,9 @@
     padding-bottom: 10%;
     display: flex;
     justify-content: center;
+    @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
+        padding-top: 15%;
+    }
 
     &__img {
         width: 100%;
@@ -55,6 +67,9 @@
             padding-top: 15%;
             width: 50vw;
             height: 70%;
+        }
+        @media screen and (min-width: 1400px) {
+            height: 90%;
         }
     }
 }
