@@ -1,14 +1,18 @@
-import AboutPage from "./Components/About_page/AboutPage";
-import Gain from "./Components/Gain/Gain";
-import TitlePage from "./Components/Title_page/Title-page";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./Pages/Home";
+import Error from "./Pages/Error/Error";
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+    errorElement: <Error />
+  }
+])
 
 function App() {
   return (
-    <div>
-      <TitlePage />
-      <AboutPage />
-      <Gain />
-    </div>
+    <RouterProvider router={router}></RouterProvider>
   );
 }
 

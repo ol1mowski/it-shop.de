@@ -5,7 +5,6 @@ import imgTeacher from '../../assets/img/it_teacher.png';
 import certificate from '../../assets/icons/certificate.svg';
 import refund from '../../assets/icons/refund.png';
 
-const image = '../../../assets/icons/teacher.png';
 
 const elements = [
   {
