@@ -43,6 +43,7 @@ const Header = () => {
                 menu.current.style.display = 'flex';
                 menu.current.style.justifyContent = 'center';
                 menu.current.style.alignItems = 'center';
+                menu.current.style.alignItems = 'center';
             }
 
             else {

@@ -1,0 +1,22 @@
+@import '../../sass/setting.module.scss';
+
+.gainContainer {
+    width: 100vw;
+    background-color: $background-color;
+    color: $text-color;
+    &__header {
+        font-size: $headers-size;
+        padding: 1rem;
+    }
+    &__slider {
+        height: 60vh;
+        background-image: url('../../assets/img/gain.png');
+        background-size: cover;
+        background-position: calc(100% - 70%);
+    }
+    &__benefitsWrapper {
+        padding-top: 10%;
+        margin: 0 auto;
+        width: 17rem;
+    }
+}

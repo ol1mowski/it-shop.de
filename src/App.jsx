@@ -1,4 +1,5 @@
 import AboutPage from "./Components/About_page/AboutPage";
+import Gain from "./Components/Gain/Gain";
 import TitlePage from "./Components/Title_page/Title-page";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <TitlePage />
       <AboutPage />
+      <Gain />
     </div>
   );
 }
