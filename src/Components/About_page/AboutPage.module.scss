@@ -17,9 +17,6 @@
         display: flex;
     }
 
-    @media (orientation: landscape)and (min-height: 320px) and (max-width: 920px) {
-        height: 100vh;
-    }
 }
 
 .containerSections {

@@ -7,6 +7,9 @@
     &__header {
         font-size: $headers-size;
         padding: 1rem;
+        @media screen and (min-width: 600px) {
+            font-size: 2rem;;
+        }
     }
     &__slider {
         height: 60vh;
@@ -18,5 +21,11 @@
         padding-top: 10%;
         margin: 0 auto;
         width: 17rem;
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+        }
     }
 }
