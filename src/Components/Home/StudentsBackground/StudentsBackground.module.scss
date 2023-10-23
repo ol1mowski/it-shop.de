@@ -1,0 +1,35 @@
+.studentsBackground {
+    width: 30vh;
+    height: 30rem;
+    &__img {
+        position: relative;
+        width: 20rem;
+        left: 0;
+    }
+}
+
+#one {
+    top: 5rem;
+    z-index: 1;
+    right: 5rem;
+}
+
+#two {
+    bottom: 17rem;
+}
+
+#three {
+    bottom: 35rem;
+}
+
+#four {
+    bottom: 56rem;
+}
+
+#five {
+    bottom: 76rem;
+}
+
+#six {
+    bottom: 97rem;
+}
