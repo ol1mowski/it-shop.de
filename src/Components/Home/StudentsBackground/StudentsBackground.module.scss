@@ -1,10 +1,18 @@
 .studentsBackground {
-    width: 30vh;
     height: 30rem;
+
     &__img {
         position: relative;
         width: 20rem;
+        margin: 0 auto;
+        display: block;
         left: 0;
+        @media screen and (min-width: 500px) {
+           width: 25rem;
+        }
+        @media screen and (min-width: 700px) {
+           width: 35rem;
+        }
     }
 }
 
@@ -12,24 +20,62 @@
     top: 5rem;
     z-index: 1;
     right: 5rem;
+    @media screen and (min-width: 500px) {
+        top: 1rem;
+    } 
+    @media screen and (min-width: 700px) {
+        top: -5rem;
+    }
 }
 
 #two {
     bottom: 17rem;
+    @media screen and (min-width: 500px) {
+        bottom: 22rem;
+        right: 10rem;
+    }
+    @media screen and (min-width: 700px) {
+        bottom: 37rem;
+    }
 }
 
 #three {
     bottom: 35rem;
+      @media screen and (min-width: 500px) {
+        bottom: 47rem;
+    }
+    @media screen and (min-width: 700px) {
+        bottom: 72rem;
+    }
 }
 
 #four {
     bottom: 56rem;
+    @media screen and (min-width: 500px) {
+        bottom: 75rem;
+    } 
+    
+    @media screen and (min-width: 700px) {
+        bottom: 112rem;
+    }
 }
 
 #five {
     bottom: 76rem;
+    @media screen and (min-width: 500px) {
+        bottom: 100rem;
+    }
+    @media screen and (min-width: 700px) {
+        bottom: 145rem;
+    }
 }
 
 #six {
     bottom: 97rem;
+    @media screen and (min-width: 500px) {
+        bottom: 125rem;
+    }
+    @media screen and (min-width: 700px) {
+        bottom: 180rem;
+    }
 }
