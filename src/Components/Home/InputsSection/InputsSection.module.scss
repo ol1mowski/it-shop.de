@@ -1,4 +1,11 @@
 .inputsSection {
+    @media screen and (min-width: 1300px) {
+        margin-left: 2rem;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-left: 15rem;
+    }
     &__form {
         display: flex;
         justify-content: center;

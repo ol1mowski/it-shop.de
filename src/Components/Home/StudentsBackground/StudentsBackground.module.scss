@@ -2,11 +2,37 @@
     height: 30rem;
 
     @media screen and (min-width: 1024px) {
-       position: relative;
-       bottom: 30rem;
-       left: 25rem;
-       width: 10rem;
+        position: relative;
+        bottom: 30rem;
+        left: 27rem;
+        width: 10rem;
     }
+
+    @media screen and (min-width: 1100px) {
+        left: 33rem;
+        bottom: 27rem;
+    }
+
+    @media screen and (min-width: 1300px) {
+        left: 37rem;
+        bottom: 23rem;
+    }
+
+    @media screen and (min-width: 1450px) {
+        left: 42rem;
+    }
+
+    @media screen and (min-width: 1550px) {
+        left: 55rem;
+        bottom: 30rem;
+    }
+    
+    @media screen and (min-width: 1800px) {
+        left: 60rem;
+    }
+
+    
+
 
     &__img {
         position: relative;
@@ -14,11 +40,17 @@
         margin: 0 auto;
         display: block;
         left: 0;
+
         @media screen and (min-width: 500px) {
-           width: 25rem;
+            width: 25rem;
         }
+
         @media screen and (min-width: 700px) {
-           width: 35rem;
+            width: 35rem;
+        }
+
+        @media screen and (min-width: 1250px) {
+            width: 40rem;
         }
     }
 }
@@ -27,62 +59,94 @@
     top: 5rem;
     z-index: 1;
     right: 5rem;
+
     @media screen and (min-width: 500px) {
         top: 1rem;
-    } 
+    }
+
     @media screen and (min-width: 700px) {
         top: -5rem;
     }
+
 }
 
 #two {
     bottom: 17rem;
+
     @media screen and (min-width: 500px) {
         bottom: 22rem;
         right: 10rem;
     }
+
     @media screen and (min-width: 700px) {
         bottom: 37rem;
+    }
+
+    @media screen and (min-width: 1300px) {
+        bottom: 45rem;
     }
 }
 
 #three {
     bottom: 35rem;
-      @media screen and (min-width: 500px) {
+
+    @media screen and (min-width: 500px) {
         bottom: 47rem;
     }
+
     @media screen and (min-width: 700px) {
         bottom: 72rem;
+    }
+
+    @media screen and (min-width: 1300px) {
+        bottom: 85rem;
     }
 }
 
 #four {
     bottom: 56rem;
+
     @media screen and (min-width: 500px) {
         bottom: 75rem;
-    } 
-    
+    }
+
     @media screen and (min-width: 700px) {
         bottom: 112rem;
+    }
+
+    @media screen and (min-width: 1300px) {
+        bottom: 127rem;
     }
 }
 
 #five {
     bottom: 76rem;
+
     @media screen and (min-width: 500px) {
         bottom: 100rem;
     }
+
     @media screen and (min-width: 700px) {
         bottom: 145rem;
+    }
+
+    @media screen and (min-width: 1300px) {
+        bottom: 165rem;
     }
 }
 
 #six {
     bottom: 97rem;
+
     @media screen and (min-width: 500px) {
         bottom: 125rem;
     }
+
     @media screen and (min-width: 700px) {
         bottom: 180rem;
+    }
+
+    @media screen and (min-width: 1300px) {
+        bottom: 210rem;
     }
 }
