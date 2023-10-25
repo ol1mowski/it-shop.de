@@ -3,24 +3,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &__images {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     &__content {
         width: 50vw;
         margin-left: 7rem;
+
         @media screen and (min-width: 500px) {
             margin-left: 0;
         }
+
         @media screen and (min-width: 500px) {
             margin-left: -7rem;
         }
+
+        @media screen and (min-width: 1024px) {
+            margin-left: -13rem;
+        }
+
         &__p {
             margin: 0;
             font-size: .9rem;
             opacity: .8;
+
             &__span {
                 color: #6366f1;
                 font-weight: bold;
@@ -38,11 +48,12 @@
     align-items: center;
     border-radius: 100%;
     background-color: #fff;
+
     &__img {
         border-radius: 100%;
         width: 3rem;
         height: 3rem;
-    }  
+    }
 }
 
 #one {

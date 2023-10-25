@@ -1,6 +1,13 @@
 .studentsBackground {
     height: 30rem;
 
+    @media screen and (min-width: 1024px) {
+       position: relative;
+       bottom: 30rem;
+       left: 25rem;
+       width: 10rem;
+    }
+
     &__img {
         position: relative;
         width: 20rem;
