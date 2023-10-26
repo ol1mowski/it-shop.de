@@ -1,0 +1,14 @@
+#a {
+    margin-left: 1rem;
+    // margin-top: 1rem;
+    border: none;
+    background-color: #EFF2FC;
+    color: #101010;
+    opacity: .8;
+    @media screen and (min-width: 768px){
+        margin-top: 1rem;
+    }
+}
+#a:hover {
+    color: #6366f1;
+}

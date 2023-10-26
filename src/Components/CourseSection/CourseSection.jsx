@@ -1,12 +1,11 @@
 import CoursesNavigation from './CoursesNavigation/CoursesNavigation';
-import PopularCourses from './PopularCourses/PopularCourses';
-import style from './courseSection.module.scss';
+import CoursesSlider from './CoursesSlider/CoursesSlider';
 
 const CourseSection = () => {
     return (
         <>
            <CoursesNavigation />
-            <PopularCourses />
+           <CoursesSlider />
         </>
     );
 };

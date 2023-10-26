@@ -2,21 +2,26 @@
     background-color: #6366f1;
     color: #fff;
     font-weight: 500;
+    margin-left: 1rem;
 }
 
 #wrapper {
     margin-top: 3rem;
+    // display: inline-block;
 }
 
-.otherList {
-    background-color: #eff3fd;
-    margin-right: 1rem;
-    border-radius: .5rem;
+#a {
+    margin-left: 1rem;
+    border: 1px solid #6366f1;
+    color: #6366f1;
+    padding: .7rem 3rem;
+    font-size: 1rem;
 }
 
-.aText {
-    color: #101010;
+#ul {
+    border-bottom: none;
 }
+
 
 .first {
     margin: 0 1rem;
