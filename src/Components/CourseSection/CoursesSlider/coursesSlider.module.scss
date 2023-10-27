@@ -1,3 +1,5 @@
+@import '../../../sass/setting.module.scss';
+
 #h1 {
   font-weight: bold;
   width: 13rem;
@@ -6,8 +8,8 @@
 }
 
 .button {
-  width: 2rem;
-  height: 2rem;
+  width: $button-size;
+  height: $button-size;
   background-color: #fff;
   border: none;
   margin-right: 1rem;
