@@ -1,0 +1,18 @@
+@import '../../../../sass/setting.module.scss';
+
+.sliderDots {
+    &__dot {
+        width: .5rem;
+        height: .5rem;
+        background-color: red;
+        display: inline-block;
+        border-radius: 100%;
+        &__active {
+            background-color: $purple;
+            width: 2rem;
+            display: inline-block;
+            border-radius: .7rem;
+            height: .5rem;
+        }
+    }
+}
