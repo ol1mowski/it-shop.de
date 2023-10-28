@@ -40,12 +40,12 @@ const Slider = () => {
           </div>
         </div>
 
-        <div class="card-footer d-flex align-items-center m-auto fs-sm text-muted py-4">
-          <div class="d-flex align-items-center me-4">
+        <div className="card-footer d-flex align-items-center m-auto fs-sm text-muted py-4">
+          <div className="d-flex align-items-center me-4">
             <img src={clock} alt="clock icon" className={style.clock} />
             220 hours
           </div>
-          <div class="d-flex align-items-center">
+          <div className="d-flex align-items-center">
             <img src={like} alt="clock icon" className={style.like} />
             94% (4.2K)
           </div>
