@@ -1,6 +1,7 @@
 import CoursesNavigation from './CoursesNavigation/CoursesNavigation';
 import CoursesSlider from './CoursesSlider/CoursesSlider';
 import style from './courseSection.module.scss';
+import CoursesButton from './CoursesButton/CoursesButton';
 
 const CourseSection = () => {
     return (
@@ -9,6 +10,7 @@ const CourseSection = () => {
 
            <CoursesNavigation />
            <CoursesSlider />
+           <CoursesButton />
         </section>
         </>
     );

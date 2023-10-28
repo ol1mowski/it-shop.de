@@ -1,0 +1,33 @@
+@import '../../../sass/setting.module.scss';
+
+.buttonWrapper {
+    border: 1px solid $purple;
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: .3rem;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &__a {
+        width: 100%;
+        height: 100%;
+        color: $purple;
+        &__button {
+            font-weight: 500;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+}
+
+.buttonWrapper:hover {
+    background-color: $purple;
+}
+.buttonWrapper__a:hover {
+    color: #fff;
+}
