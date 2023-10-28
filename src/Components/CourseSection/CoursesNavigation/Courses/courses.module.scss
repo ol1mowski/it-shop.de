@@ -1,3 +1,5 @@
+@import '../../../../sass/setting.module.scss';
+
 #a {
     margin-left: 1rem;
     // margin-top: 1rem;
@@ -10,5 +12,5 @@
     }
 }
 #a:hover {
-    color: #6366f1;
+    color: $purple;
 }

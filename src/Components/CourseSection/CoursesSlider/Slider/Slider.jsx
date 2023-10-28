@@ -40,7 +40,7 @@ const Slider = () => {
           </div>
         </div>
 
-        <div class="card-footer d-flex align-items-center p-1 fs-sm text-muted py-4">
+        <div class="card-footer d-flex align-items-center m-auto fs-sm text-muted py-4">
           <div class="d-flex align-items-center me-4">
             <img src={clock} alt="clock icon" className={style.clock} />
             220 hours

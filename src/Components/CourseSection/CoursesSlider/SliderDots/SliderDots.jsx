@@ -8,6 +8,7 @@ const SliderDots = () => {
                 <div className={style.sliderDots__dot}></div>
                 <div className={style.sliderDots__dot}></div>
                 <div className={style.sliderDots__dot}></div>
+                <div className={style.sliderDots__dot}></div>
             </section>
         </>
     )

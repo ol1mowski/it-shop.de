@@ -1,5 +1,7 @@
+@import '../../../sass/setting.module.scss';
+
 #active {
-  background-color: #6366f1;
+  background-color: $purple;
   color: #fff;
   font-weight: 500;
   margin-left: 1rem;
@@ -15,8 +17,8 @@
 
 #a {
   margin-left: 1rem;
-  border: 1px solid #6366f1;
-  color: #6366f1;
+  border: 1px solid $purple;
+  color: $purple;
   padding: 0.7rem 3rem;
   font-size: 1rem;
 }
