@@ -1,59 +1,56 @@
-import img from "../../../../assets/img/Title_persons/green.png";
-
 import style from './slider.module.scss';
+import img from '../../../../assets/img/slider_image/01.jpg';
+import icon from '../../../../assets/icons/save.svg';
+import clock from '../../../../assets/icons/clock.svg';
+import like from '../../../../assets/icons/like.png';
 
-const Slider = props => {
+const Slider = () => {
   return (
     <>
-      <article className="card h-100 border-0 shadow-sm mx-2">
-        <div className="position-relative">
-          <a
-            href="portfolio-single-course.html"
-            className="d-block position-absolute w-100 h-100 top-0 start-0"
-            aria-label="Course link"
-          ></a>
-          <span className="badge bg-success position-absolute top-0 start-0 zindex-2 mt-3 ms-3">
-            Best Seller
-          </span>
-          <a
-            href="#"
-            className="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-2 me-3 mt-3"
-            data-bs-toggle="tooltip"
-            data-bs-placement="left"
-            aria-label="Save to Favorites"
-            data-bs-original-title="Save to Favorites"
-          >
-            <img
-              src={props.save}
-              alt="save icon"
-              id={style.save}
-              className={style.save}
-            />
-          </a>
-          <img src={props.src} className="card-img-top" alt="Image" />
+      <div className={style.slider}>
+        <div className={style.slider__imgSection}>
+          <img src={img} alt='courses ' className={style.slider__imgSection__img} />
+          <div className={style.slider__imgSection__label}>
+            <span className={style.slider__imgSection__label__span}>
+              Best Seller
+            </span>
+          </div>
+          <div className={style.slider__imgSection__save}>
+            <img src={icon} className={style.slider__imgSection__save__icon} alt='save icon' />
+          </div>
         </div>
-        <div className="card-body pb-3">
-          <h3 className="h5 mb-2">
-            <a href="portfolio-single-course.html">
+
+        <div className={style.slider__contentSection}>
+          <div className={style.slider__contentSection__wrapper}>
+            <h3 className={style.slider__contentSection__h3}>
               Fullstack Web Developer Course from Scratch
-            </a>
-          </h3>
-          <p className="fs-sm mb-2">By Albert Flores</p>
-          <p className="fs-lg fw-semibold text-primary mb-0">$12.50</p>
-        </div>
-        <div className="card-footer d-flex align-items-center fs-sm text-muted py-4">
-          <div className="d-flex align-items-center me-4">
-            <i className="bx bx-time fs-xl me-1"></i>
-            220 hours
-          </div>
-          <div className="d-flex align-items-center">
-            <i className="bx bx-like fs-xl me-1"></i>
-            94% (4.2K)
+            </h3>
+            <p className={style.slider__contentSection__pAutor}>
+              By Albert Flores
+            </p>
+            <p className={style.slider__contentSection__pPrice}>
+              $12.50
+            </p>
           </div>
         </div>
-      </article>
+        
+        <div className={style.slider__iconsSection}>
+          {/* <div className={style.slider__iconsSection__clock}>
+            <img src={clock} className={style.slider__iconsSection__clock__img} alt='clock icon' />
+            <p className={style.slider__iconsSection__clock__string}>
+              220 hours
+            </p>
+          </div>
+          <div className={style.slider__iconsSection__clock}>
+            <img src={like} className={style.slider__iconsSection__clock__img} alt='clock icon' />
+            <p className={style.slider__iconsSection__clock__string}>
+              220 hours
+            </p>
+          </div> */}
+        </div>
+      </div>
     </>
-  );
-};
+  )
+}
 
 export default Slider;
