@@ -78,11 +78,11 @@
         margin-top: 2rem;
         gap: 1rem;
         &__clock {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: 5rem;
             height: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
             &__img {
                 width: 100%;
                 height: 100%;
@@ -92,4 +92,17 @@
             }
         }
     }
+}
+
+.clock {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 .5rem;
+}
+
+.like {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 .5rem;
+    padding-bottom: .2rem;
 }
