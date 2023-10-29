@@ -5,6 +5,20 @@ import clock from "../../../../assets/icons/clock.svg";
 import like from "../../../../assets/icons/like.png";
 
 const Slider = () => {
+
+  const COURSES_INFO = [
+    {
+      id: 1,
+      bestseller: true,
+      title: 'Fullstack Web Developer Course from Scratch',
+      autor: 'Albert Flores',
+      price: 12.50,
+      time: 220,
+      rating: 94,
+      students: 4.2,
+    },
+  ];
+
   return (
     <>
       <div className={style.slider}>
@@ -15,9 +29,9 @@ const Slider = () => {
             className={style.slider__imgSection__img}
           />
           <div className={style.slider__imgSection__label}>
-            <span className={style.slider__imgSection__label__span}>
+            {COURSES_INFO[0].bestseller ? <span className={style.slider__imgSection__label__span}>
               Best Seller
-            </span>
+            </span> : null}
           </div>
           <div className={style.slider__imgSection__save}>
             <img
@@ -31,23 +45,24 @@ const Slider = () => {
         <div className={style.slider__contentSection}>
           <div className={style.slider__contentSection__wrapper}>
             <h3 className={style.slider__contentSection__h3}>
-              Fullstack Web Developer Course from Scratch
+            { COURSES_INFO[0].title }
             </h3>
             <p className={style.slider__contentSection__pAutor}>
-              By Albert Flores
+              By { COURSES_INFO[0].autor }
             </p>
-            <p className={style.slider__contentSection__pPrice}>$12.50</p>
+            <p className={style.slider__contentSection__pPrice}>${ COURSES_INFO[0].price }0</p>
           </div>
         </div>
+        <div className={style.slider__line}></div>
 
-        <div className="card-footer d-flex align-items-center m-auto fs-sm text-muted py-4">
+        <div className="card-footer p-3 d-flex align-items-center m-auto fs-sm text-muted py-4">
           <div className="d-flex align-items-center me-4">
             <img src={clock} alt="clock icon" className={style.clock} />
-            220 hours
+            { COURSES_INFO[0].time } hours
           </div>
           <div className="d-flex align-items-center">
             <img src={like} alt="clock icon" className={style.like} />
-            94% (4.2K)
+            { COURSES_INFO[0].rating }% ({ COURSES_INFO[0].students }K)
           </div>
         </div>
       </div>
