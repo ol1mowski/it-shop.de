@@ -1,0 +1,117 @@
+@import '../../../../../sass/setting.module.scss';
+
+.slider {
+    width: 90vw;
+    box-shadow: $box-shadow;
+    margin: 2rem auto;
+    border-radius: .7rem;
+    @media screen and (min-width: 560px) {
+        width: 45vw;
+    }
+    &__line {
+        width: 90%;
+        height: 1px;
+        margin: 0 auto;
+        background-color: #e2e5f1;
+    }
+    &__imgSection {
+        height: 40%;
+        position: relative;
+        &__img {
+            border-top-right-radius: .7rem;
+            border-top-left-radius: .7rem;
+            width: 100%;
+            height: 100%;
+        }
+        &__label {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: #22c55e;
+            padding: 0 .5rem;
+            border-radius: .2rem;
+            &__span {
+                color: #fff;
+                font-size: .8rem;
+            }
+        }
+        &__save {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: #fff;
+            width: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2rem;
+            border-radius: 100%;
+            &__icon {
+                width: 60%;
+                aspect-ratio: 2/4;
+            }
+        }
+    }
+    &__contentSection {
+        padding: 2rem 1rem 0 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        &__wrapper {
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            // border-bottom: 1px solid #e2e5f1;
+        }
+        &__h3 {
+            width: 100%;
+            line-height: 1.7rem;
+            color: #33354d;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        &__pAutor {
+            font-size: .85rem;
+            opacity: .6;
+        }
+        &__pPrice {
+            color: $purple;
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
+    }
+    &__iconsSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 1rem;
+        &__clock {
+            width: 5rem;
+            height: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            &__img {
+                width: 100%;
+                height: 100%;
+            }
+            &__string {
+                font-size: .7rem;
+            }
+        }
+    }
+}
+
+.clock {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 .5rem;
+}
+
+.like {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 .5rem;
+    padding-bottom: .2rem;
+}
