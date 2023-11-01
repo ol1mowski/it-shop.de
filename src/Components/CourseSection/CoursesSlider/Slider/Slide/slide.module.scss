@@ -8,6 +8,15 @@
     @media screen and (min-width: 560px) {
         width: 45vw;
     }
+    @media screen and (min-width: 768px) {
+        width: 55vw;
+        margin-top: 5rem;
+    }
+
+    @media screen and (min-width: 850px) {
+        width: 30vw;
+    }
+    
     &__line {
         width: 90%;
         height: 1px;

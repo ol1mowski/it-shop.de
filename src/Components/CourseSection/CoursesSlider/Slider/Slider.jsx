@@ -29,10 +29,10 @@ const Slider = () => {
   const index = useSelector((state) => state.indexSlice.index);
 
 
-  
+
   useEffect(() => {
-      console.log(index);
-      
+    console.log(index);
+
   }, [index])
 
 
@@ -54,7 +54,21 @@ const Slider = () => {
         return false
       }
     }
-    if (width < 560 && width >= 768) {
+    if (width >= 850) {
+      if (index < 2) {
+        return true
+      } else {
+        return false
+      }
+    }
+    if (width < 560) {
+      if (index === 1) {
+        return true
+      } else {
+        return false
+      }
+    }
+    if (width >= 768) {
       if (index === 1) {
         return true
       } else {
@@ -62,10 +76,17 @@ const Slider = () => {
       }
     }
   }
-  
+
 
   const visible3 = () => {
     if (width >= 560 && width < 768) {
+      if (index < 3 && index !== 0) {
+        return true
+      } else {
+        return false
+      }
+    }
+    if (width >= 850) {
       if (index < 3 && index !== 0) {
         return true
       } else {
@@ -79,10 +100,17 @@ const Slider = () => {
         return false
       }
     }
+    if (width >= 768) {
+      if (index === 2) {
+        return true
+      } else {
+        return false
+      }
+    }
   }
 
 
-  
+
   const visible4 = () => {
     if (width >= 560 && width < 768) {
       if (index < 4 && index !== 0 && index !== 1) {
@@ -91,7 +119,21 @@ const Slider = () => {
         return false
       }
     }
-    if (width < 560 && width >= 768) {
+    if (width >= 850) {
+      if (index < 4 && index !== 0 && index !== 1) {
+        return true
+      } else {
+        return false
+      }
+    }
+    if (width < 560) {
+      if (index === 3) {
+        return true
+      } else {
+        return false
+      }
+    }
+    if (width >= 768) {
       if (index === 3) {
         return true
       } else {
@@ -107,7 +149,21 @@ const Slider = () => {
         return false
       }
     }
-    if (width < 560 && width >= 768) {
+    if (width >= 850) {
+      if (index < 5 && index !== 0 && index !== 1 && index !== 2) {
+        return true
+      } else {
+        return false
+      }
+    }
+    if (width < 560) {
+      if (index === 4) {
+        return true
+      } else {
+        return false
+      }
+    }
+    if (width >= 768) {
       if (index === 4) {
         return true
       } else {

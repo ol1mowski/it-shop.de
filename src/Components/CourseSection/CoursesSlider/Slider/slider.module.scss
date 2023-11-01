@@ -4,9 +4,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     @media screen and (min-width: 768px) {
         position: relative;
         top: 4rem;
-        right: 20rem;
+        right: 22rem;
     }
+
+    @media screen and (min-width: 850px) {
+        right: 26rem;
+        top: 2.5rem;
+        gap: 2rem;
+    }
+
 }
