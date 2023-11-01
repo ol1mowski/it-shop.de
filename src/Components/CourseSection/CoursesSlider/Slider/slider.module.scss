@@ -1,18 +1,16 @@
 @import '../../../../sass/setting.module.scss';
 
 .coursesWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include d-flex;
 
     @media screen and (min-width: 768px) {
         position: relative;
-        top: 4rem;
-        right: 22rem;
+        top: 6rem;
+        right: 56vw;
     }
 
     @media screen and (min-width: 850px) {
-        right: 26rem;
+        right: 57vw;
         top: 2.5rem;
         gap: 2rem;
     }

@@ -20,20 +20,25 @@
     }
 }
 
-@mixin buttonHover {
-    cursor: pointer;
-    padding: 1.2rem;
-    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-    @media screen and (min-width: 1000px) {
-        padding: 1.4rem;
-    }
+@mixin d-flex-row() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-// Var
+@mixin d-flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// Vars
+
 //colors
-$text-color: #fff;
+$white-text-color: #f4efff;
+$dark-text-color: #101010;
 $background-color: #f4efff;
 $purple: #6366f1;
 $white-purple: #EFF2FC;

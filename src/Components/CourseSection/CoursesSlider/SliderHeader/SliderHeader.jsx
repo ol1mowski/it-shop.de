@@ -12,6 +12,9 @@ const SliderHeader = () => {
     const prev = useRef(null);
     const next = useRef(null);
 
+    console.log(prev.current);
+    console.log(next.current);
+
     const prevArrow = useRef(null);
     const nextArrow = useRef(null);
 
