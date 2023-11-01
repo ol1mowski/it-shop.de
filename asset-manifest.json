@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/it-shop.de/static/css/main.d2b2837b.css",
-    "main.js": "/it-shop.de/static/js/main.0ddb278c.js",
+    "main.css": "/it-shop.de/static/css/main.cf6d21e6.css",
+    "main.js": "/it-shop.de/static/js/main.4eb8299b.js",
     "static/js/787.037d72d9.chunk.js": "/it-shop.de/static/js/787.037d72d9.chunk.js",
     "static/media/grey.png": "/it-shop.de/static/media/grey.019448ca7d150658f47c.png",
     "static/media/green.png": "/it-shop.de/static/media/green.5ce350dca77a55faddba.png",
     "static/media/orange.png": "/it-shop.de/static/media/orange.ea381a1ecd2eb1ef584a.png",
     "static/media/yellow.png": "/it-shop.de/static/media/yellow.0e016e2625e81856c00e.png",
+    "static/media/05.jpg": "/it-shop.de/static/media/05.a85572d1c6ec91a77db0.jpg",
+    "static/media/04.jpg": "/it-shop.de/static/media/04.4f095bb55d58b214d1a7.jpg",
+    "static/media/02.jpg": "/it-shop.de/static/media/02.25a32547ceb2d48145f7.jpg",
+    "static/media/01.jpg": "/it-shop.de/static/media/01.fc06cb1aac4b887b9174.jpg",
+    "static/media/03.jpg": "/it-shop.de/static/media/03.d465a14fae2dee57c4a1.jpg",
     "static/media/bigger_circle.png": "/it-shop.de/static/media/bigger_circle.7f358c661734ec9e005a.png",
     "static/media/search.svg": "/it-shop.de/static/media/search.c388e27f1ba1821a39b2a7ac38e39b08.svg",
     "index.html": "/it-shop.de/index.html",
-    "main.d2b2837b.css.map": "/it-shop.de/static/css/main.d2b2837b.css.map",
-    "main.0ddb278c.js.map": "/it-shop.de/static/js/main.0ddb278c.js.map",
+    "static/media/clock.svg": "/it-shop.de/static/media/clock.bb75cc8a53e393bfdc9a40e16407cd0e.svg",
+    "static/media/save.svg": "/it-shop.de/static/media/save.8ae6c4479a0522f73611cefb76ceade1.svg",
+    "static/media/arrow.svg": "/it-shop.de/static/media/arrow.3b875fbddbc970e65cb6cccac59502a2.svg",
+    "main.cf6d21e6.css.map": "/it-shop.de/static/css/main.cf6d21e6.css.map",
+    "main.4eb8299b.js.map": "/it-shop.de/static/js/main.4eb8299b.js.map",
     "787.037d72d9.chunk.js.map": "/it-shop.de/static/js/787.037d72d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2b2837b.css",
-    "static/js/main.0ddb278c.js"
+    "static/css/main.cf6d21e6.css",
+    "static/js/main.4eb8299b.js"
   ]
 }
