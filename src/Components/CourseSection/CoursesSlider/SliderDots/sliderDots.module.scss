@@ -16,6 +16,20 @@
         top: 22rem;
     }
 
+    @media screen and (min-width: 850px) {
+        right: 102vw;
+        top: 21rem;
+    }
+
+    @media screen and (min-width: 1400px) {
+        right: 100vw;
+    }
+
+    @media screen and (min-width: 1700px) {
+        top: 23rem;
+        right: 87vw;
+    }
+
     &__dot {
         width: .5rem;
         height: .5rem;

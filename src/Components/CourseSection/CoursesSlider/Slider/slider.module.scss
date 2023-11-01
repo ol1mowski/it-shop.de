@@ -11,8 +11,20 @@
 
     @media screen and (min-width: 850px) {
         right: 57vw;
-        top: 2.5rem;
+        top: 4rem;
         gap: 2rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        right: 65vw;
+    }
+    @media screen and (min-width: 1200px) {
+        right: 62vw;
+    }
+
+    @media screen and (min-width: 1700px) {
+        top: 6rem;
+        right: 55vw;
     }
 
 }
