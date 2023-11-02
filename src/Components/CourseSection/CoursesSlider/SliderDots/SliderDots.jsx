@@ -5,12 +5,14 @@ import { useEffect, useRef } from 'react';
 const SliderDots = () => {
 
     const index = useSelector((state) => state.indexSlice.index);
+    const width = useSelector(state => state.widthSlice.width);
 
     const one = useRef(null);
     const two = useRef(null);
     const three = useRef(null);
     const four = useRef(null);
     const five = useRef(null);
+
 
 
     useEffect(() => {
@@ -58,16 +60,16 @@ const SliderDots = () => {
                 four.current.id = '';
                 five.current.id = '';
         }
-    }, [index])
+    }, [index, width])
 
     return (
         <>
             <section className={style.sliderDots}>
-                <div ref={one} className={style.sliderDots__dot}></div>
-                <div ref={two} className={style.sliderDots__dot}></div>
-                <div ref={three} className={style.sliderDots__dot}></div>
-                <div ref={four} className={style.sliderDots__dot}></div>
-                <div ref={five} className={style.sliderDots__dot}></div>
+                <div ref={one} className={style.sliderDots__dot1}></div>
+                <div ref={two} className={style.sliderDots__dot2}></div>
+                <div ref={three} className={style.sliderDots__dot3}></div>
+                <div ref={four} className={style.sliderDots__dot4}></div>
+                <div ref={five} className={style.sliderDots__dot5}></div>
             </section>
         </>
     )

@@ -28,3 +28,40 @@
     }
 
 }
+
+#id2 {
+    display: none;
+}
+#id3 {
+    display: none;
+}
+#id4 {
+    display: none;
+}
+#id5 {
+    display: none;
+}
+
+@media screen and (min-width: 560px) {
+    #id2 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #id2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    #id2 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #id3 {
+        display: block;
+    }
+}

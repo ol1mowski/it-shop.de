@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import img1 from "../../../../assets/img/slider_image/01.jpg";
 import img2 from "../../../../assets/img/slider_image/02.jpg";
 import img3 from "../../../../assets/img/slider_image/03.jpg";
@@ -7,16 +7,23 @@ import img5 from "../../../../assets/img/slider_image/05.jpg";
 import Slide from "./Slide/Slide";
 import style from './slider.module.scss';
 import { useEffect, useState } from "react";
+import { changeWidth } from '../../../../store/widthState';
 
 const Slider = () => {
 
   const [width, setWidth] = useState(window.innerWidth);
+  const [indexNew, setIndexNew] = useState(0);
+
+  const dispatch = useDispatch()
+
 
 
 
   useEffect(() => {
     const handleResize = () => {
-      setWidth(window.innerWidth);
+      const newWidth = window.innerWidth;
+      setWidth(newWidth);
+      dispatch(changeWidth(newWidth))
     };
 
     window.addEventListener('resize', handleResize);
@@ -26,175 +33,65 @@ const Slider = () => {
     };
   }, []);
 
+
   const index = useSelector((state) => state.indexSlice.index);
 
 
 
   useEffect(() => {
-    console.log(index);
-
+    setIndexNew(index)
   }, [index])
 
-
-  const visible1 = () => {
-    if (index === 0) {
-      return true
-    } else {
-      return false
-    }
-  }
-
-
-
-  const visible2 = () => {
-    if (width >= 560 && width < 768) {
-      if (index < 2) {
-        return true
-      } else {
-        return false
-      }
-    }
-    if (width >= 850) {
-      if (index < 2) {
-        return true
-      } else {
-        return false
-      }
-    }
+  const slideStyle1 = () => {
     if (width < 560) {
-      if (index === 1) {
-        return true
-      } else {
-        return false
-      }
-    }
-    if (width >= 768) {
-      if (index === 1) {
-        return true
-      } else {
-        return false
+      if (indexNew !== 0) {
+        return { display: 'none' }
       }
     }
   }
 
-
-  const visible3 = () => {
-    // if (width >= 1200) {
-    //   return true
-    // }
-    if (width >= 560 && width < 768) {
-      if (index < 3 && index !== 0) {
-        return true
-      } else {
-        return false
-      }
-    }
-    if (width >= 1200) {
-      if (index < 3) {
-        return true
-      } else {
-        return false
-      }
-    }
-    if (width >= 850) {
-      if (index < 3 && index !== 0) {
-        return true
-      } else {
-        return false
-      }
-    }
+  const slideStyle2 = () => {
     if (width < 560) {
-      if (index === 2) {
-        return true
-      } else {
-        return false
+      if (indexNew === 1) {
+        return { display: 'block' }
       }
-    }
-    if (width >= 768) {
-      if (index === 2) {
-        return true
-      } else {
-        return false
+      if (indexNew >= 3) {
+        return { display: 'none' }
       }
     }
   }
-
-
-
-  const visible4 = () => {
-    if (width >= 560 && width < 768) {
-      if (index >= 4) {
-        return true
-      } else {
-        return false
-      }
-    }
-    if (width >= 1200) {
-      if (index >= 1) {
-        return true
-      } else {
-        return false
-      }
-    }
-    if (width >= 850) {
-      if (index < 4) {
-        return true
-      } else {
-        return false
-      }
-    }
+  
+  const slideStyle3 = () => {
     if (width < 560) {
-      if (index === 3) {
-        return true
-      } else {
-        return false
+      if (indexNew === 2) {
+        return { display: 'block' }
       }
-    }
-    if (width >= 768) {
-      if (index === 3) {
-        return true
-      } else {
-        return false
+      if (indexNew >= 4) {
+        return { display: 'none' }
       }
     }
   }
-  const visible5 = () => {
-    if (width >= 560 && width < 768) {
-      if (index < 5 && index !== 0 && index !== 1) {
-        return true
-      } else {
-        return false
-      }
-    }
-    if (width >= 1200) {
-      if (index >= 2) {
-        return true
-      } else {
-        return false
-      }
-    }
-    if (width >= 850) {
-      if (index < 5 && index !== 0 && index !== 1 && index !== 2) {
-        return true
-      } else {
-        return false
-      }
-    }
+  const slideStyle4 = () => {
     if (width < 560) {
-      if (index === 4) {
-        return true
-      } else {
-        return false
+      if (indexNew === 3) {
+        return { display: 'block' }
       }
-    }
-    if (width >= 768) {
-      if (index === 4) {
-        return true
-      } else {
-        return false
+      if (indexNew >= 5) {
+        return { display: 'none' }
       }
     }
   }
+  const slideStyle5 = () => {
+    if (width < 560) {
+      if (indexNew === 4) {
+        return { display: 'block' }
+      }
+      if (indexNew !== 5) {
+        return { display: 'none' }
+      }
+    }
+  }
+
 
   const COURSES_INFO = [
     {
@@ -208,7 +105,8 @@ const Slider = () => {
       rating: 94,
       students: 4.2,
       sale: false,
-      display: visible1(),
+      slideStyle: slideStyle1(),
+      tagId: style.id1,
     },
     {
       id: 2,
@@ -221,7 +119,8 @@ const Slider = () => {
       rating: 92,
       students: 3.1,
       sale: false,
-      display: visible2(),
+      tagId: style.id2,
+      slideStyle: slideStyle2(),
     },
     {
       id: 3,
@@ -234,7 +133,8 @@ const Slider = () => {
       rating: 98,
       students: 2.7,
       sale: true,
-      display: visible3(),
+      tagId: style.id3,
+      slideStyle: slideStyle3(),
     },
     {
       id: 4,
@@ -247,7 +147,8 @@ const Slider = () => {
       rating: 96,
       students: 3.8,
       sale: false,
-      display: visible4(),
+      tagId: style.id4,
+      slideStyle: slideStyle4(),
     },
     {
       id: 5,
@@ -260,7 +161,8 @@ const Slider = () => {
       rating: 95,
       students: 5.4,
       sale: false,
-      display: visible5(),
+      tagId: style.id5,
+      slideStyle: slideStyle5(),
     },
   ];
 
@@ -278,7 +180,9 @@ const Slider = () => {
           rating={item.rating}
           students={item.students}
           sale={item.sale}
-          display={item.display}
+          slideStyle={item.slideStyle}
+          // display={item.display}
+          tagId={item.tagId}
         />)}
       </div>
     </>

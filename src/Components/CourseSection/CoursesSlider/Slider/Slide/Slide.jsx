@@ -8,7 +8,7 @@ const Slide = props => {
 
     return (
         <>
-            {props.display ? <div className={style.slider}>
+            <div style={props.slideStyle} id={props.tagId} className={style.slider}>
                 <div className={style.slider__imgSection}>
                     <img
                         src={props.img}
@@ -41,7 +41,6 @@ const Slide = props => {
                     </div>
                 </div>
                 <div className={style.slider__line}></div>
-
                 <div className="card-footer p-3 d-flex align-items-center m-auto fs-sm text-muted py-4">
                     <div className="d-flex align-items-center me-4">
                         <img src={clock} alt="clock icon" className={style.clock} />
@@ -52,7 +51,7 @@ const Slide = props => {
                         {props.rating}% ({props.students}K)
                     </div>
                 </div>
-            </div> : null}
+            </div>
         </>
 
     );

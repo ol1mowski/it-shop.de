@@ -1,13 +1,15 @@
 import style from './sliderHeader.module.scss';
 import arrow from '../../../../assets/icons/arrow.svg';
 import { useEffect, useRef, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { decrement, increment } from '../../../../store/indexState';
 
 
 const SliderHeader = () => {
 
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+
+    const width = useSelector(state => state.widthSlice.width);
 
     const prev = useRef(null);
     const next = useRef(null);
@@ -28,9 +30,17 @@ const SliderHeader = () => {
         };
 
         const showNext = () => {
-            if (index < 4) {
-                setIndex(prev => prev + 1);
-                dispatch(increment());
+            if (width < 560) {
+                if (index < 4) {
+                    setIndex(prev => prev + 1);
+                    dispatch(increment());
+                }
+            }
+            if (width >= 560) {
+                if (index < 3) {
+                    setIndex(prev => prev + 1);
+                    dispatch(increment());
+                }
             }
         };
 
@@ -50,13 +60,22 @@ const SliderHeader = () => {
         } else {
             prevArrow.current.style.opacity = .4;
         }
-        if (index === 4) {
-            nextArrow.current.style.opacity = .4;
-        } else {
-            nextArrow.current.style.opacity = 1;
+        if (width < 560) {
+            if (index === 4) {
+                nextArrow.current.style.opacity = .4;
+            } else {
+                nextArrow.current.style.opacity = 1;
+            }
+        }
+        if (width >= 560) {
+            if (index === 3) {
+                nextArrow.current.style.opacity = .4;
+            } else {
+                nextArrow.current.style.opacity = 1;
+            }
         }
 
-    }, [index])
+    }, [index, width])
 
     return (
         <>
