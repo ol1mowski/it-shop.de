@@ -47,7 +47,9 @@
             }
         }
         &__arrowLeft:hover {
-            background-color: $gray;
+            @media screen and (min-width: 1024px) {
+                background-color: $gray;   
+            }
         }
         &__arrowRight {
             border-radius: 100%;
@@ -62,7 +64,9 @@
             }
         }
         &__arrowRight:hover {
-            background-color: $gray;
+            @media screen and (min-width: 1024px) {
+                background-color: $gray;   
+            }
         }
     }
 }
