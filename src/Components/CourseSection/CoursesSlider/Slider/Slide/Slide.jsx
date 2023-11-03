@@ -15,9 +15,14 @@ const Slide = props => {
                         alt="courses "
                         className={style.slider__imgSection__img}
                     />
-                    { props.bestseller ? <div className={style.slider__imgSection__label}>
+                    {props.bestseller ? <div className={style.slider__imgSection__label}>
                         <span className={style.slider__imgSection__label__span}>
                             Best Seller
+                        </span>
+                    </div> : null}
+                    {props.sale ? <div className={style.slider__imgSection__label} style={{ backgroundColor: '#ef4545' }}>
+                        <span className={style.slider__imgSection__label__span}>
+                            Sale
                         </span>
                     </div> : null}
                     <div className={style.slider__imgSection__save}>
@@ -37,7 +42,8 @@ const Slide = props => {
                         <p className={style.slider__contentSection__pAutor}>
                             By {props.autor}
                         </p>
-                        <p className={style.slider__contentSection__pPrice}>${props.price}</p>
+                        {props.sale ? (<p className={style.slider__contentSection__pPrice} style={{ color: '#ef4545' }}>${props.price}</p>) : <p className={style.slider__contentSection__pPrice}>${props.price}</p>}
+                        { props.sale ? <p className={style.slider__contentSection__pPrice__old}>${props.oldPrice}</p> : null}
                     </div>
                 </div>
                 <div className={style.slider__line}></div>

@@ -24,6 +24,12 @@
   color: $purple;
   padding: 0.7rem 3rem;
   font-size: 1rem;
+  transition: color, background-color .4s;
+}
+
+#a:hover {
+  color: $white-text-color;
+  background-color: $purple;
 }
 
 #ul {

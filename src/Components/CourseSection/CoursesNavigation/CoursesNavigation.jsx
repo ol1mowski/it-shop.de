@@ -42,7 +42,7 @@ const CoursesNavigation = () => {
                         </li>
                    { COURSES.map((val) => <Courses key={val.id} course={val.name} />) }
                 </ul>
-                <a id={style.a} href="portfolio-courses.html" className="btn btn-outline-primary btn-lg d-none d-md-inline-flex">
+                <a id={style.a} href="/" className="btn btn-outline-primary btn-lg d-none d-md-inline-flex">
                     See all courses
                 </a>
             </div>

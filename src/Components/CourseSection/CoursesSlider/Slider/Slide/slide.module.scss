@@ -6,6 +6,7 @@
     box-shadow: $box-shadow;
     margin: 2rem auto;
     border-radius: .7rem;
+    transition: all 0.2s;
 
     @media screen and (min-width: 560px) {
         width: 45vw;
@@ -112,7 +113,19 @@
         &__pPrice {
             color: $purple;
             font-size: 1.125rem;
+            display: inline-block;
             font-weight: 700;
+
+            &__old {
+                margin-left: .3rem;
+                display: inline-block;
+                color: $purple;
+                font-size: 1rem;
+                display: inline-block;
+                font-weight: 500;
+                text-decoration: line-through;
+                color: $gray;
+            }
         }
     }
 
@@ -140,6 +153,21 @@
             }
         }
     }
+}
+
+.slider:hover {
+    cursor: pointer;
+    transform: translateY(-.5rem);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=9, Direction=124, Color=#9397AD)";
+    /*IE 8*/
+    -moz-box-shadow: 2px 3px 9px -3px #9397AD;
+    /*FF 3.5+*/
+    -webkit-box-shadow: 2px 3px 9px -3px #9397AD;
+    /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 2px 3px 9px -3px #9397AD;
+    /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=9, Direction=135, Color=#9397AD);
+    /*IE 5.5-7*/
 }
 
 .clock {

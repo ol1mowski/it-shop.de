@@ -249,6 +249,7 @@ const Slider = () => {
       rating: 94,
       students: 4.2,
       sale: false,
+      oldPrice: 0,
       slideStyle: slideStyle1(),
       tagId: style.id1,
     },
@@ -263,6 +264,7 @@ const Slider = () => {
       rating: 92,
       students: 3.1,
       sale: false,
+      oldPrice: 0,
       tagId: style.id2,
       slideStyle: slideStyle2(),
     },
@@ -277,6 +279,7 @@ const Slider = () => {
       rating: 98,
       students: 2.7,
       sale: true,
+      oldPrice: 44.99,
       tagId: style.id3,
       slideStyle: slideStyle3(),
     },
@@ -291,6 +294,7 @@ const Slider = () => {
       rating: 96,
       students: 3.8,
       sale: false,
+      oldPrice: 0,
       tagId: style.id4,
       slideStyle: slideStyle4(),
     },
@@ -305,6 +309,7 @@ const Slider = () => {
       rating: 95,
       students: 5.4,
       sale: false,
+      oldPrice: 0,
       tagId: style.id5,
       slideStyle: slideStyle5(),
     },
@@ -327,6 +332,7 @@ const Slider = () => {
           slideStyle={item.slideStyle}
           // display={item.display}
           tagId={item.tagId}
+          oldPrice={item.oldPrice}
         />)}
       </div>
     </>
