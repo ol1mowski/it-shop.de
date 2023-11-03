@@ -43,6 +43,15 @@
 }
 
 
+//breakpoints
+
+$breakpoints: (
+  mobile: 560px,
+  tablet: 768px,
+  big-tablets: 850px,
+  desktop: 1200px,
+);
+
 // Vars
 
 //colors

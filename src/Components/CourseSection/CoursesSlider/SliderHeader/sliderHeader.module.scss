@@ -3,7 +3,7 @@
 .header {
     @include d-flex;
     gap: 3rem;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         align-items: flex-start;
         margin-top: 3rem;
         gap: 6rem;
@@ -14,13 +14,13 @@
     }
     &__title {
         width: 50vw;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: map-get($breakpoints, tablet)) {
             width: 35vw;
         }
         &__h2 {
             font-weight: bold;
             font-size: $headers-size;
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: map-get($breakpoints, tablet)) {
                 font-size: 2rem;
             }
             @media screen and (min-width: 1700px) {

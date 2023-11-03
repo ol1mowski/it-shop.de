@@ -3,13 +3,13 @@
 .coursesWrapper {
     @include d-flex;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         position: relative;
         top: 6rem;
         right: 56vw;
     }
 
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: map-get($breakpoints, big-tablets)) {
         right: 57vw;
         top: 4rem;
         gap: 2rem;
@@ -18,7 +18,7 @@
     @media screen and (min-width: 992px) {
         right: 65vw;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
         right: 62vw;
     }
 
@@ -42,25 +42,25 @@
     display: none;
 }
 
-@media screen and (min-width: 560px) {
+@media screen and (min-width: map-get($breakpoints, mobile)) {
     #id2 {
         display: block;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: map-get($breakpoints, tablet)) {
     #id2 {
         display: none;
     }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: map-get($breakpoints, big-tablets)) {
     #id2 {
         display: block;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: map-get($breakpoints, desktop)) {
     #id3 {
         display: block;
     }

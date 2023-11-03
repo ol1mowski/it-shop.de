@@ -3,18 +3,13 @@
 .sliderDots {
     @include d-flex;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         position: relative;
         top: 25rem;
         right: 90vw;
     }
 
-    @media screen and (min-width: 850px) {
-        right: 97vw;
-        top: 22rem;
-    }
-
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: map-get($breakpoints, big-tablets)) {
         right: 102vw;
         top: 21rem;
     }
@@ -38,18 +33,18 @@
         transition: all .3s;
     }
     &__dot5 {
-        @media screen and (min-width: 560px) {
+        @media screen and (min-width: map-get($breakpoints, mobile)) {
             display: none;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: map-get($breakpoints, tablet)) {
             display: block;
         }
-        @media screen and (min-width: 850px) {
+        @media screen and (min-width: map-get($breakpoints, big-tablets)) {
             display: none;
         }
     }
     &__dot4 {
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
             display: none;
         }
     }
