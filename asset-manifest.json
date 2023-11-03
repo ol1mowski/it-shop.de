@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/it-shop.de/static/css/main.517b2cff.css",
-    "main.js": "/it-shop.de/static/js/main.022716e4.js",
+    "main.css": "/it-shop.de/static/css/main.ff432dcd.css",
+    "main.js": "/it-shop.de/static/js/main.2b409286.js",
     "static/js/787.037d72d9.chunk.js": "/it-shop.de/static/js/787.037d72d9.chunk.js",
     "static/media/grey.png": "/it-shop.de/static/media/grey.019448ca7d150658f47c.png",
     "static/media/green.png": "/it-shop.de/static/media/green.5ce350dca77a55faddba.png",
@@ -18,12 +18,12 @@
     "static/media/clock.svg": "/it-shop.de/static/media/clock.bb75cc8a53e393bfdc9a40e16407cd0e.svg",
     "static/media/save.svg": "/it-shop.de/static/media/save.8ae6c4479a0522f73611cefb76ceade1.svg",
     "static/media/arrow.svg": "/it-shop.de/static/media/arrow.3b875fbddbc970e65cb6cccac59502a2.svg",
-    "main.517b2cff.css.map": "/it-shop.de/static/css/main.517b2cff.css.map",
-    "main.022716e4.js.map": "/it-shop.de/static/js/main.022716e4.js.map",
+    "main.ff432dcd.css.map": "/it-shop.de/static/css/main.ff432dcd.css.map",
+    "main.2b409286.js.map": "/it-shop.de/static/js/main.2b409286.js.map",
     "787.037d72d9.chunk.js.map": "/it-shop.de/static/js/787.037d72d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.517b2cff.css",
-    "static/js/main.022716e4.js"
+    "static/css/main.ff432dcd.css",
+    "static/js/main.2b409286.js"
   ]
 }
