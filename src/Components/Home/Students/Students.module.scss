@@ -1,13 +1,12 @@
+@import '../../../sass/setting.module.scss';
+
 .student {
     margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include d-flex;
 
     &__images {
-        display: flex;
+        @include d-flex;
         justify-content: flex-start;
-        align-items: center;
 
         @media screen and (min-width: 1100px) {
             position: relative;
@@ -41,7 +40,7 @@
             opacity: .8;
 
             &__span {
-                color: #6366f1;
+                color: $purple;
                 font-weight: bold;
             }
         }
@@ -52,9 +51,7 @@
     position: relative;
     width: 3.4rem;
     height: 3.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include d-flex;
     border-radius: 100%;
     background-color: #fff;
 

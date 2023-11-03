@@ -6,9 +6,7 @@
     margin: 2rem auto;
     border-radius: .3rem;
     padding: .5rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include d-flex;
     cursor: pointer;
     @media screen and (min-width: 768px) {
         display: none;
@@ -20,9 +18,7 @@
         &__button {
             font-weight: 500;
             font-size: 1.1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include d-flex;
             gap: 1rem;
         }
     }
@@ -32,5 +28,5 @@
     background-color: $purple;
 }
 .buttonWrapper__a:hover {
-    color: #fff;
+    color: $white-text-color;
 }

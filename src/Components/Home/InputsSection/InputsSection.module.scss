@@ -1,3 +1,5 @@
+@import '../../../sass/setting.module.scss';
+
 .inputsSection {
     @media screen and (min-width: 1300px) {
         margin-left: 2rem;
@@ -7,10 +9,7 @@
         margin-left: 15rem;
     }
     &__form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include d-flex-row;
 
         @media screen and (min-width: 500px) {
             flex-direction: row;
@@ -28,10 +27,9 @@
         margin: 0 auto;
         padding: .8rem;
         border-radius: .5rem;
-        background-color: #6266f0;
+        background-color: $purple;
         border: none;
-        display: flex;
-        justify-content: center;
+        @include d-flex;
         align-items: flex-start;
 
         @media screen and (min-width: 500px) {

@@ -19,7 +19,7 @@
         }
         &__h2 {
             font-weight: bold;
-            font-size: 1.7rem;
+            font-size: $headers-size;
             @media screen and (min-width: 768px) {
                 font-size: 2rem;
             }
@@ -29,19 +29,13 @@
         }
     }
     &__arrowsMenu {
-        display: flex;
+        @include d-flex;
         justify-content: space-around;
-        align-items: center;
         width: 5rem;
         &__arrowLeft {
-            width: 2rem;
-            @include d-flex;
-            border-radius: 100%;
-            height: 2rem;
-            cursor: pointer;
-            box-shadow: $box-shadow;
+            @include buttonArrow;
             &__icon {
-                width: 40%;
+                width: $arrow-icon-size;
                 opacity: .4;
                 transform: rotate(90deg);
             }
@@ -52,14 +46,9 @@
             }
         }
         &__arrowRight {
-            border-radius: 100%;
-            width: 2rem;
-            height: 2rem;
-            cursor: pointer;
-            @include d-flex;
-            box-shadow: $box-shadow;
+            @include buttonArrow;
             &__icon {
-                width: 40%;
+                width: $arrow-icon-size;
                 transform: rotate(270deg);
             }
         }

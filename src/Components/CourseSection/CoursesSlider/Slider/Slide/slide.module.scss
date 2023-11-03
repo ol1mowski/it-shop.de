@@ -71,9 +71,7 @@
             right: 1rem;
             background-color: #fff;
             width: 2rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include d-flex;
             height: 2rem;
             border-radius: 100%;
 
@@ -86,10 +84,7 @@
 
     &__contentSection {
         padding: 2rem 1rem 0 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
+        @include d-flex-row;
 
         &__wrapper {
             padding-bottom: 1rem;
@@ -130,9 +125,7 @@
     }
 
     &__iconsSection {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+       @include d-flex;
         margin-top: 2rem;
         gap: 1rem;
 
