@@ -25,14 +25,19 @@ const Slider = () => {
       setWidth(newWidth);
       dispatch(changeWidth(newWidth))
     };
-
+  
+    // Nasłuchuj na zmiany rozmiaru okna
     window.addEventListener('resize', handleResize);
-
+  
+    // Wywołaj funkcję zaraz po załadowaniu strony
+    window.addEventListener('load', handleResize);
+  
     return () => {
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('load', handleResize);
     };
   }, []);
-
+  
 
   const index = useSelector((state) => state.indexSlice.index);
 
@@ -43,10 +48,8 @@ const Slider = () => {
   }, [index])
 
   const slideStyle1 = () => {
-    if (width < 560) {
-      if (indexNew !== 0) {
-        return { display: 'none' }
-      }
+    if (indexNew !== 0) {
+      return { display: 'none' }
     }
   }
 
@@ -59,8 +62,38 @@ const Slider = () => {
         return { display: 'none' }
       }
     }
+
+    if (width >= 850) {
+      if (indexNew < 2) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 2) {
+        return { display: 'none' }
+      }
+    }
+
+    if (width >= 768) {
+      if (indexNew < 1) {
+        return { display: 'none' }
+      }
+      if (indexNew === 1) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 2) {
+        return { display: 'none' }
+      }
+    }
+    if (width >= 560) {
+      if (indexNew < 2) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 2) {
+        return { display: 'none' }
+      }
+    }
+
   }
-  
+
   const slideStyle3 = () => {
     if (width < 560) {
       if (indexNew === 2) {
@@ -70,7 +103,46 @@ const Slider = () => {
         return { display: 'none' }
       }
     }
+
+    if (width >= 1200) {
+      if (indexNew <= 2) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 2) {
+        return { display: 'none' }
+      }
+    }
+
+    if (width >= 850) {
+      if (indexNew < 3 && indexNew >= 1) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 3) {
+        return { display: 'none' }
+      }
+    }
+
+    if (width >= 768) {
+      if (indexNew < 2) {
+        return { display: 'none' }
+      }
+      if (indexNew >= 2 && indexNew < 3) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 3) {
+        return { display: 'none' }
+      }
+    }
+    if (width >= 560) {
+      if (indexNew >= 1 && indexNew < 3) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 3) {
+        return { display: 'none' }
+      }
+    }
   }
+
   const slideStyle4 = () => {
     if (width < 560) {
       if (indexNew === 3) {
@@ -80,13 +152,85 @@ const Slider = () => {
         return { display: 'none' }
       }
     }
+
+    if (width >= 1200) {
+      if (indexNew >= 1) {
+        return { display: 'block' }
+      }
+    }
+
+    if (width >= 850 && indexNew >= 2) {
+      if (indexNew < 4) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 4) {
+        return { display: 'none' }
+      }
+    }
+
+    if (width >= 768) {
+      if (indexNew < 3) {
+        return { display: 'none' }
+      }
+      if (indexNew === 3) {
+        return { display: 'block' }
+      }
+      if (indexNew === 4) {
+        return { display: 'none' }
+      }
+    }
+    if (width >= 560) {
+      if (indexNew >= 2) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 3) {
+        return { display: 'none' }
+      }
+    }
   }
+
   const slideStyle5 = () => {
     if (width < 560) {
       if (indexNew === 4) {
         return { display: 'block' }
       }
       if (indexNew !== 5) {
+        return { display: 'none' }
+      }
+    }
+    if (width >= 1200) {
+      if (indexNew >= 2) {
+        return { display: 'block' }
+      }
+    }
+
+
+    if (width >= 850 && indexNew >= 3) {
+      if (indexNew < 5) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 5) {
+        return { display: 'none' }
+      }
+    }
+
+    if (width >= 768) {
+      if (indexNew < 4) {
+        return { display: 'none' }
+      }
+      if (indexNew >= 4 && indexNew < 5) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 4) {
+        return { display: 'none' }
+      }
+    }
+
+    if (width >= 560) {
+      if (indexNew >= 3) {
+        return { display: 'block' }
+      }
+      if (indexNew >= 4) {
         return { display: 'none' }
       }
     }

@@ -36,7 +36,13 @@ const SliderHeader = () => {
                     dispatch(increment());
                 }
             }
-            if (width >= 560) {
+            if (width >= 1200) {
+                if (index < 2) {
+                    setIndex(prev => prev + 1);
+                    dispatch(increment());
+                }
+            }
+            else if (width >= 560) {
                 if (index < 3) {
                     setIndex(prev => prev + 1);
                     dispatch(increment());
@@ -55,6 +61,7 @@ const SliderHeader = () => {
     }, [prev, next, index]);
 
     useEffect(() => {
+        
         if (index > 0) {
             prevArrow.current.style.opacity = 1;
         } else {
@@ -69,6 +76,13 @@ const SliderHeader = () => {
         }
         if (width >= 560) {
             if (index === 3) {
+                nextArrow.current.style.opacity = .4;
+            } else {
+                nextArrow.current.style.opacity = 1;
+            }
+        }
+        if (width >= 1200) {
+            if (index === 2) {
                 nextArrow.current.style.opacity = .4;
             } else {
                 nextArrow.current.style.opacity = 1;
