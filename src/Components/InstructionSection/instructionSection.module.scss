@@ -1,0 +1,13 @@
+@import '../../sass/setting.module.scss';
+
+.instructionSection {
+    margin-top: 5rem;
+    @include d-flex-row;
+    width: 90vw;
+
+    &__h2 {
+        color: #0b0f19;
+        font-size: $headers-size;
+        font-weight: 700;
+    }
+}
