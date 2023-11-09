@@ -2,7 +2,7 @@ import style from './Instruction.module.scss';
 
 const Instruction = props => {
 
-    const { id, header, content } = props
+    const { id, header, content, src } = props
 
     return (
         <>
@@ -17,15 +17,18 @@ const Instruction = props => {
                     </div>
                 </div>
                 <div className={style.instructionContainer__contentSection}>
+                    <div className={style.instructionContainer__contentSection__image}>
+                        <img src={src} alt='nice image' className={style.instructionContainer__contentSection__image__img} />
+                    </div>
                     <div className={style.instructionContainer__contentSection__header}>
                         <h2 className={style.instructionContainer__contentSection__header__h2}>
                             {header}
                         </h2>
-                    </div>
-                    <div className={style.instructionContainer__contentSection__p}>
+                        <div className={style.instructionContainer__contentSection__p}>
                         <p>
                             { content }
                         </p>
+                    </div>
                     </div>
                 </div>
             </div>
