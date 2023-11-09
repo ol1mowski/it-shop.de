@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/it-shop.de/static/css/main.dbd02de5.css",
-    "main.js": "/it-shop.de/static/js/main.2b409286.js",
+    "main.css": "/it-shop.de/static/css/main.bbafb049.css",
+    "main.js": "/it-shop.de/static/js/main.7859567f.js",
     "static/js/787.037d72d9.chunk.js": "/it-shop.de/static/js/787.037d72d9.chunk.js",
     "static/media/grey.png": "/it-shop.de/static/media/grey.019448ca7d150658f47c.png",
     "static/media/green.png": "/it-shop.de/static/media/green.5ce350dca77a55faddba.png",
@@ -11,19 +11,23 @@
     "static/media/04.jpg": "/it-shop.de/static/media/04.4f095bb55d58b214d1a7.jpg",
     "static/media/02.jpg": "/it-shop.de/static/media/02.25a32547ceb2d48145f7.jpg",
     "static/media/01.jpg": "/it-shop.de/static/media/01.fc06cb1aac4b887b9174.jpg",
+    "static/media/4.png": "/it-shop.de/static/media/4.19dca9e882900551311e.png",
+    "static/media/3.png": "/it-shop.de/static/media/3.2eaf9d005cc7f0d4a199.png",
     "static/media/03.jpg": "/it-shop.de/static/media/03.d465a14fae2dee57c4a1.jpg",
+    "static/media/2.png": "/it-shop.de/static/media/2.f5838992b07fe98dcae8.png",
+    "static/media/1.png": "/it-shop.de/static/media/1.6125734a712af09b8fe1.png",
     "static/media/bigger_circle.png": "/it-shop.de/static/media/bigger_circle.7f358c661734ec9e005a.png",
     "static/media/search.svg": "/it-shop.de/static/media/search.c388e27f1ba1821a39b2a7ac38e39b08.svg",
     "index.html": "/it-shop.de/index.html",
     "static/media/clock.svg": "/it-shop.de/static/media/clock.bb75cc8a53e393bfdc9a40e16407cd0e.svg",
     "static/media/save.svg": "/it-shop.de/static/media/save.8ae6c4479a0522f73611cefb76ceade1.svg",
     "static/media/arrow.svg": "/it-shop.de/static/media/arrow.3b875fbddbc970e65cb6cccac59502a2.svg",
-    "main.dbd02de5.css.map": "/it-shop.de/static/css/main.dbd02de5.css.map",
-    "main.2b409286.js.map": "/it-shop.de/static/js/main.2b409286.js.map",
+    "main.bbafb049.css.map": "/it-shop.de/static/css/main.bbafb049.css.map",
+    "main.7859567f.js.map": "/it-shop.de/static/js/main.7859567f.js.map",
     "787.037d72d9.chunk.js.map": "/it-shop.de/static/js/787.037d72d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbd02de5.css",
-    "static/js/main.2b409286.js"
+    "static/css/main.bbafb049.css",
+    "static/js/main.7859567f.js"
   ]
 }
