@@ -1,0 +1,11 @@
+@import '../../sass/setting.module.scss';
+
+.gainSectionContainer {
+    margin-top: 5rem;
+    @include d-flex-row;
+    &__header {
+        &__h2 {
+            @include haeders;
+        }
+    }
+}

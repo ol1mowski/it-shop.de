@@ -50,6 +50,12 @@
     box-shadow: $box-shadow;
 }
 
+@mixin haeders() {
+    color: #0b0f19;
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: 700;
+}
+
 
 //breakpoints
 

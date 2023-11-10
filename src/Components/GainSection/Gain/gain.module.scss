@@ -1,0 +1,15 @@
+@import '../../../sass/setting.module.scss';
+
+
+.gainContainer {
+    &__imgWrapper {
+        border-radius: 100%;
+        background-color: #f3f6ff;
+        box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(11, 15, 25, 0.06), 0 0.125rem 0.4rem -0.0625rem rgba(11, 15, 25, 0.03);
+
+        &__img {
+            width: 30%;
+            border-radius: 70%;
+        }
+    }
+}
