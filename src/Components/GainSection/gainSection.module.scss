@@ -3,9 +3,19 @@
 .gainSectionContainer {
     margin-top: 5rem;
     @include d-flex-row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
     &__header {
         &__h2 {
             @include haeders;
+        }
+    }
+    &__gainWrapper {
+        @include d-flex-row;
+        @media screen and (min-width: 600px) {
+            flex-direction: row;
+            flex-wrap: wrap;
         }
     }
 }

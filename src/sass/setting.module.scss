@@ -50,6 +50,12 @@
     box-shadow: $box-shadow;
 }
 
+@mixin small-headers() {
+    color: #0b0f19;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
 @mixin haeders() {
     color: #0b0f19;
     font-size: calc(1.375rem + 1.5vw);

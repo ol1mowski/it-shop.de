@@ -2,7 +2,23 @@
 
 
 .gainContainer {
+    padding: 2rem;
+    box-shadow: $box-shadow;
+    width: 90vw;
+    height: 25rem;
+    margin: 0 auto;
+    @media screen and (min-width: 600px) {
+        width: 40vw;
+        margin-top: 5rem;
+    }
+    @media screen and (min-width: 1000px) {
+        width: 25vw;
+        margin-right: 2rem;
+    }
     &__imgWrapper {
+        width: 4rem;
+        aspect-ratio: 1;
+        @include d-flex;
         border-radius: 100%;
         background-color: #f3f6ff;
         box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(11, 15, 25, 0.06), 0 0.125rem 0.4rem -0.0625rem rgba(11, 15, 25, 0.03);
@@ -10,6 +26,15 @@
         &__img {
             width: 30%;
             border-radius: 70%;
+        }
+    }
+    &__content {
+        margin-top: 2rem;
+        &__h3 {
+            @include small-headers;
+        }
+        &__p {
+            @include p;
         }
     }
 }
